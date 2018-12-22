@@ -98,5 +98,5 @@
                   name = "liuying"
                   #__age就是私有成员
                   __age = 18
-    - Python的私有不是真私有，是一种称为name 命令的改名策略
+    - Python的私有不是真私有，是一种称为name mangling的改名策略
     可以使对象，_classname_attributename访问
