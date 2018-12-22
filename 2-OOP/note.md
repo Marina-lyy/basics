@@ -46,11 +46,11 @@
          obj.成员方法
 - 可以通过默认内置变量检查类和对象的所有成员
     - 对象所有成员检查
-        # dict前后各有两个下划线
-        obj._dict_
+        #dict前后各有两个下划线
+        obj.__dict__
     - 类所有的成员
-        # dict前后各有两个下划线
-        class_name._dict_
+        #dict前后各有两个下划线
+        class_name.__dict__
 # 3. anaconda基本使用
 - anaconda主要是一个虚拟环境管理器
 - 还是一个安装包管理器
@@ -85,3 +85,18 @@
     - 公开，public
     - 受保护的，protected
     - 私有的，private
+    - public,private,protected不是关键字
+- 判别对象的位置
+    - 对象内部
+    - 对象外部
+    - 子类中
+- 私有 
+    - 私有成员是最高级别的封装，只能在当前类或对象中访问
+    - 在成员前面添加两个下划线即可
+              class Person():
+                  # name是共有成员
+                  name = "liuying"
+                  #__age就是私有成员
+                  __age = 18
+    - Python的私有不是真私有，是一种称为name 命令的改名策略
+    可以使对象，_classname_attributename访问
