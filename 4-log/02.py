@@ -9,7 +9,9 @@
 
     1）要记录所有级别的日志，因此日志器的有效level需要设置为最低级别--DEBUG；
     2）日志需要被发送到两个不同的目的地，因此需要为日志器设置两个Handler：另外，两个目的地都是磁盘文件，因此这两个Handler都是与fileHandler
+         相关的的；
     3）all.log要求按照时间进行日志切割，因此他需要用logging.handlers.TimedRotatingFileHandler;而error.log没有要求日志切割，
+         因此可以使用FileHandler；
     4）两个日志文件的格式不同，因此需要对这两个Handler分别设置格式器：
 
 '''
@@ -22,17 +24,21 @@ import datetime
 logger = logging.getLogger('mylogger')
 logger.setLevel(logging.DEBUG)
 
-rf_handler = logging.handlers.TimedRotatingFileHandler('all.log',when='midight',interval=1,backupCount=7,atTime=
-rf_handler.setFormatter(logging.Formatter("%(asctime)s - %(levelname)s - (message)s"))
+# 为两个不同文件设置不同的handler
+rf_handler = logging.handlers.TimedRotatingFileHandler('all.log',when='midnight',interval=1,backupCount=7,atTime=datetime.time(0,0,0,0))
+rf_handler.setFormatter(logging.Formatter("%(asctime)s - %(levelname)s - %(message)s"))
 
 
 f_handler = logging.FileHandler('error.log')
 f_handler.setLevel(logging.ERROR)
-f_handler.setFormatter(logging.Formatter("%(asctime)s - %(levelname)s - %(filename)s[:%lineno)d] - %(message)s"))
+f_handler.setFormatter(logging.Formatter("%(asctime)s - %(levelname)s - %(filename)s[:%(lineno)d] - %(message)s"))
 
 # 把相应的处理器组装到logger 上
 logger.addHandler(rf_handler)
 logger.addHandler(f_handler)
 
 logger.debug('debug message')
-logg
+logger.info('info message')
+logger.warning('warning message')
+logger.error('error message')
+logger.critical('critical message')

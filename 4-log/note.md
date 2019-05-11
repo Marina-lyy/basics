@@ -106,12 +106,23 @@
         - addFilter,removeFilter
     - 不需要直接使用，Handler是基类
     
-        - logging.StreamHandler  将日志消息发送到输出到Stream。如std.out,std.err或任何file-like对
+        - logging.StreamHandler  将日志消息发送到输出到Stream。如std.out,std.err或任何file-like对像
         - logging.FileHandler  将日志消息发送到磁盘文件，默认情况下文件大小会无限增长
         - logging.handlers.RotatingFileHandler  将日志消息发送到磁盘文件，并支持日志文件按大小切割
         - logging.handlers.TimedRotatingFileHandler  将日志消息发送到磁盘文件，并支持日志文件按时间切割
         - logging.handlers.HTTPHandler  将日志消息以GET或ＰＯＳＴ的方式发送给一个HTTP服务器
         - logging.handlers.SMTPHandler  将日志消息发送给一个指定的email地址
-        - logging.NullHandler  该Handler实例会忽略error messages，通常被对象使用logging的library  “黑洞”
+        - logging.NullHandler  该Handler实例会忽略error messages，通常被对象使用logging的library 开发者使用来避
+          免'No handlers could be found for logger XXX'信息的出现
 
 - Format类
+    - 直接实类化
+    - 可以继承Format添加特殊内容
+    - 三个参数
+        - fmt:指定消息格式化字符串，如果不指定该参数则默认使用message的原始值
+        - datefmt:指定日期格式字符串，如果不指定该参数则默认使用"%Y-%m-%d %H:%M:%S"
+        - style:Python3.2新增的参数，可取值为'%','{'和'$',如果不指定该参数则默认使用'%'
+    - Filter类
+        - 可以被Handler和Logger使用
+        - 控制传递过来的信息的具体内容
+    - 案例02
