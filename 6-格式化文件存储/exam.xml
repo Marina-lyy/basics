@@ -2,7 +2,7 @@
 
 <School type="online" loc="beijing">
     <Student genter="male">
-
+        <score>math&gt;80</score>
         <name>haha</name>
         <age>18</age>
     </Student>
