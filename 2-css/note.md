@@ -1,3 +1,23 @@
+# Css基本语法及页面引用
+- css基本语法
+    - css定义方法是：选择器（属性：值；属性：值；属性：值：）选择器是将样式和页面元素关联起来的名称，属性是希望
+  设置样式属性每个属性有一个或多个值。
+- css页面引入方法
+    - 1、外联式：通过link标签，链接到外部样式表到页面中。
+        - <link rel="stylesheet" type="text/css" href="css/nafn.css">
+    - 2、嵌入式：通过style标签，在网页上创建嵌入的样式表。
+        - <style type="text/css>
+            div{ width:100px;
+                 height:100px;
+                 color:red
+                 ...
+                 }
+           </style>
+    - 3、内联式：通过标签的style属性，在标签上直接写样式。
+        - <div style="width:100px;height:100px;color:red">
+        ....
+        </div>
+    - 案例1
 # css选择器
 - 常用的选择器有如下几种：
 - 1、标签选择器
@@ -20,3 +40,5 @@
     - 常用的伪类选择器有hover，表示鼠标悬浮在元素上时的状态，伪元素选择器有before和after，他们可以通过样式在
     元素中插入内容。
     - 案例5
+    
+
