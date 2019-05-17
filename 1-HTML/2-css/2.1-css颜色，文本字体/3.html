@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>边框属性</title>
+    <style>
+        .item{
+            width:200px;
+            height:200px;
+            /*
+               border设置边框   solid 实线   dotted  虚线点状  dashed  虚线
+               注意：设置边框的时候 有三个值 一个都不能丢
+            */
+
+            /*border:1px solid #000;*/
+            /*border:dotted 3px #000;*/
+            /*border:#f00 2px dashed;*/
+
+            /*单独设置上边框*/
+            border-top:3px solid red;
+            /*单独设置下边框*/
+            border-bottom:3px dashed green;
+            /*单独设置左侧边框*/
+            border-left:4px dotted blue;
+            /*单独设置右侧边框*/
+            border-right:3px solid pink;
+
+
+        }
+
+        .box1{
+            width:200px;
+            height:200px;
+            border:1px solid red;
+            /*
+                border-radius设置圆角
+                给一个值设置的是四个角的圆角属性
+                如果给四个值：
+                    第一个值设置的是左上角
+                    第二个值设置的是右上角
+                    第三个值设置的是右下角
+                    第四个只设置的是左下角
+                    （顺时针方向）
+                如果给两个值：
+                    设置对角
+                    第一个值设置 左上和右下角
+                    第二个值设置的是 右上和左下角
+
+            */
+
+            /*border-radius:50%;*/
+            /*border-radius:10px 30px 50px 70px;*/
+            border-radius:10px 70px;
+
+        }
+        .box2{
+            width:200px;
+            height:200px;
+            border:1px solid red;
+
+            /*
+               box-shadow设置阴影
+              第一个值表示x轴  正直往右偏移  负值往左偏移
+              第二个轴表示y轴   正直向下   负值向上
+              第三个值表示模糊程度
+              第四个值表示扩散范围
+              第五个值表示阴影颜色
+              第六个值设置是否为内阴影    inset 内阴影
+                如果不设置可以不写
+              */
+            /*box-shadow:10px 10px 20px 10px red;*/
+        }
+        /*伪类*/
+        .box2:hover{
+            box-shadow:-10px 10px 20px 10px #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="item"></div>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>
