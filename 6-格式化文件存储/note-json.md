@@ -1,4 +1,4 @@
-# JSON
+# **JSON**
 - 在线工具
     - https://www.sojson.com/
     - http://www.w3school.com.cn/json/
@@ -32,5 +32,5 @@
         - json.dump():把内容写入文件
         - json.load():把json文件内容读入python
         
-    - 案例v07
-    - 案例v08读取文件
+    - 案例v0a
+    - 案例v08读取文件阿范德萨水电费

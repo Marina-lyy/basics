@@ -2,7 +2,7 @@
 <School>
     <Teacher desc="PythonTeacher" score="good">
         <Name>LiuDana</Name>
-        <Age detail="Age for year 2010">18</Age>
+        <Age_1 Detail="Age for year 2010">18</Age_1>
         <Mobile>13260446055</Mobile>
     </Teacher>
      <Student>
