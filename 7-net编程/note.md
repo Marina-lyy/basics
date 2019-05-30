@@ -100,3 +100,63 @@
     - file： 文件名称，例如 Klar-1.1-RC1.apk
     - 如果想完整精确表示FTP上某一个文件，需要上述三部分组合在一起
     - 案例v06
+    
+# mail编程
+## 电子邮件历史
+- 起源
+    - 1969 Leonard K. 教授发给同事的“LO”
+    - 1971 美国国防部自主的阿帕网（Arpanet）的通讯机制
+    - 通讯地址利用@，
+    - 1987年中国的第一份电子邮件
+    "Across the Great Wall we can reach every corner in the world"
+- 管理程序
+    - Euroda是邮件普及
+    - Netscape，outlook，forxmail后来居上
+    - Hotmail使用浏览器发送邮件
+- 参考资料
+    - [官网](https://docs.python.org/3/library/email.html)
+    
+## 邮件的工作流程
+- MUA(MailuserAgent)邮件用户代理
+- MTA(MailTransferAgent)邮件传输代理
+- MDA(MailDeliveryAgent)邮件投递代理
+- laoshi@qq.com,老师，北京海淀
+- xuesheng@sina.com, 学生，上海江岸区
+- 流程
+    1.MUA->MTA, 邮件已经在服务器上了
+    2.qq MTA->......->sina MTA, 邮件在新浪的服务器上
+    3.sina MTA -> sina MDA, 此时邮件已经在你的邮箱里了
+    4.sina MDA -> MUA(Foxmail/Outlook),邮件下载到本地电脑
+    
+- 编写程序
+    - 发送：MUA->MTA with SMTP:SimpleMailTransferProtocal, 包含MTA->MTA
+    - 接受：MDA->MUA with POP3 and IMAP:PostOfficeProtocal v3 and  InternetMessageAccessProtocal v4
+    
+- 准备工作
+    - 注册邮箱（以qq邮箱为例）
+    - 第三方邮箱需要特殊设置， 以qq邮箱为例
+        - 进入设置中心
+        - 取得授权码
+        
+- python for mail
+    - SMTP协议负责发送邮件
+        - 使用email模块构建邮件
+            - 纯文本邮件
+            - 案例v07
+        - HTML格式邮件发送
+            - 准备HTML代码作为内容
+            - 把邮件的subtpye设为html
+            - 发送
+            - 案例v08
+        - 发送带附件的邮件
+            - 可以把邮件看作是一个文本邮件和一个附件的合体
+            - 一封邮件如果涉及多个部分，需要使用MIMEMultipart格式构建
+            - 添加一个MIMEText正文
+            - 添加一个MIMEBase或者MEMEText作为附件
+            -案例v09
+        - 使用smtplib模块发送邮件
+        
+    - POP3协议接受邮件
+    
+    
+    
