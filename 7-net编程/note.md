@@ -154,9 +154,20 @@
             - 添加一个MIMEText正文
             - 添加一个MIMEBase或者MEMEText作为附件
             -案例v09
+            
+        - 添加邮件头，抄送等信息
+            - mail["From"] 表示发送者信息，包括姓名和邮件
+            - mail["To"]  表示接受者信息，包括姓名和邮件地址
+            - mail["Subject"] 表示摘要或者主题信息
+            - 案例v10
+        - 同时支持HTML和text格式
+            - 构建一个MIMEMultipart格式邮件
+            - MIMEMultipart的subtype设置成alternative格式
+            - 添加HTML和text邮件
+            - 案例v11
         - 使用smtplib模块发送邮件
         
     - POP3协议接受邮件
-    
+        
     
     
