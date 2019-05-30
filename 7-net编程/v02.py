@@ -20,11 +20,13 @@ def clientFunc():
     # 发送
     sock.sendto(data,  ("127.0.0.1", 23454))
 
-    data, addr = sock.recvfrom(400)
+    data, addr = sock.recvfrom(200)
 
     data = data.decode()
 
     print(data)
+
+
 
 if __name__ == '__main__':
     clientFunc()
