@@ -17,11 +17,11 @@ mail_content ='''
 msg = MIMEText(mail_content, "html", "utf-8")
 
 # 构建发送者地址和登录信息
-from_addr = "1295278001@qq.com"
+from_addr = "1295278@qq.com"
 from_pwd = "ahtxbprhlicbbagc"
 
 # 构建邮件接受者信息
-to_addr = "1295278001@qq.com"
+to_addr = "1295278@qq.com"
 
 smtp_srv = "smtp.qq.com"
 

@@ -11,7 +11,7 @@ from email.utils import parseaddr
 # 这个过程主要负责从MDA到MUA的下载并使用Parse粗略解析
 def getMsg():
     # 准备相应的信息
-    email = "1295278001@qq.com"
+    email = "1295278@qq.com"
     # 邮箱的授权码
     pwd = "ahtxbprhlicbbagc"
 

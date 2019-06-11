@@ -1,0 +1,22 @@
+# 0 爬虫准备工作
+- 参考资料
+    - python网络数据采集，图灵工业出版
+    - 精通python爬虫框架scrapy.人民邮电出版社
+    - [Python3网络爬虫](http://blog.csdn.net/c406495762/article/details/72858983)
+    - [Scrapy官方教程](http://scrapy-chs.readthedocs.io/zh_CN/0.24/intro/tutorial.html)
+- 前提知识
+    - url
+    - http协议
+    - web前端、html, css, js
+    - ajax
+    - re, xpath
+    - xml
+    
+- 1. 爬虫简介
+- 爬虫定义：网络爬虫（又被称为网页蜘蛛，网络机器人、在FOAF社区中间，更经常的称为网页追逐者）
+ 是一种按照一定的规则，自动地爬取万维网信息的程序或者脚本。
+ 另外一些不常使用的名字还有蚂蚁、自动索引、 模拟程序或者蠕虫。
+ - 两大特征
+    - 能按作者要求下载数据或者内容
+    - 能自动在网络上流窜
+  

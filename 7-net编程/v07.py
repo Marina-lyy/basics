@@ -9,13 +9,13 @@ from email.mime.text import MIMEText
 msg = MIMEText("Hello, i am beijing tulingxueyuan ", "plain", "utf-8")
 
 # 发送email地址，此处地址直接使用我的qq有偶像，密码一般需要临时输入，此处偷懒
-from_addr = "1295278001@qq.com"
+from_addr = "1295278@qq.com"
 # 此处密码是经过申请设置后的授权码，不是你的qq邮箱密码
 from_pwd = "ahtxbprhlicbbagc"
 
 # 收件人信息
 # 此处使用qq邮箱，我给自己发送
-to_addr = "1295278001@qq.com"
+to_addr = "129527@qq.com"
 
 # 输入SMTP服务器地址
 # 此处根据不同的邮件服务商有不同的值
