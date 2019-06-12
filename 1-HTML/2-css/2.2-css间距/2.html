@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css外间距</title>
+    <style>
+        div{
+            width:200px;
+            height:200px;
+        }
+        .item1{
+            background:green;
+            /*设置item的底部的外间距，让他距离item20px*/
+            /*margin 设置外间距*/
+            /*margin-bottom:20px;*/
+
+        }
+        .item2{
+            background:red;
+            /*单独给每一个方向设置相应的间距*/
+            /*margin-top:20px;
+            margin-left:20px;
+            margin-right:20px;*/
+
+            /*当设置四个值的时候
+                第一个值代表元素顶部的内间距
+                第二个值代表的是元素右边的内间距
+                第三个值代表的是元素底边的间距
+                第四个值代表元素左边的内间距
+             */
+            /*margin:20px 30px 40px 50px;*/
+
+
+            /*margin:设置两个值的时候
+                第一个值代表上下边的间距
+                第二个值代表左右对边的间距
+             */
+            /*margin:20px 50px:*/
+            /*当设置一个值得时候
+                代表当前元素上下左右四周距离元素的间距
+             */
+            /*margin:50px;*/
+
+            /*margin的使用技巧 让元素水平居中*/
+            margin:0 auto;
+        }
+        .item3{
+            background:blue;
+        }
+    </style>
+</head>
+<body>
+    <!--外间距：是元素距离周边元素的间距-->
+    <div class="item1"></div>
+    <div class="item2"></div>
+    <div class="item3"></div>
+</body>
+</html>
