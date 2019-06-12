@@ -34,3 +34,8 @@
     - Python2: urllib和urllib2配合使用，或者requests
     - Python3: urllib, requests
      
+# 2. urllib
+- 包含模块
+    - urllib.request:打开和读取urls
+    - urllib.error:包含urllib.request产生的常见错误，使用try捕捉
+    - 
