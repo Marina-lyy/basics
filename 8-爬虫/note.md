@@ -19,4 +19,18 @@
  - 两大特征
     - 能按作者要求下载数据或者内容
     - 能自动在网络上流窜
-  
+- 三大步骤：
+    - 下载网页
+    - 提取正确的信息
+    - 根据一定规则自动跳到另外的网页上执行上两步内容
+    
+- 爬虫分类
+    - 通用爬虫
+    - 专用爬虫（聚焦爬虫）
+    
+- Python网络包简介
+    - Python2.x: urllib, urllib2, urllib3, httplib, httplib2, requests
+    - Python3.x: urllib, urllib3, httplib2, requests
+    - Python2: urllib和urllib2配合使用，或者requests
+    - Python3: urllib, requests
+     
