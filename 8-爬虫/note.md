@@ -41,3 +41,9 @@
     - urllib.parse: 包含即系URL的方法
     - urllib.robotparse: 解析robots.txt文件
     -案例v1
+   
+- 网页编码问题解决
+    - chardet 可以自动检测页面文件的编码格式，但是，可能有误
+    - 需要安装，conda install chardet
+    - 案例v2
+- urlopen 的返回对象
