@@ -70,3 +70,19 @@
         - 为了更多的设置请求信息，单独的通过urlopen函数已经不太好用了
         - 需要利用request.Request 类
         - 案例v6
+        
+- urllib.error
+    - URLError产生的原因：
+        - 没网
+        - 服务器链接失败
+        - 不知道指定服务器
+        - 是OSError的子类
+        - 案例v7
+    - HTTPError, 是URLError的一个子类
+        - 案例v8
+    
+    - 两者区别：
+        - HTTPError是对应的HTTP请求的返回码错误，如果返回错误码是400以上的，
+        则引发HTTPError
+        - URLError对应的一般是网络出现问题，包括URL问题
+        - 关系区别：OSError- URLError- HTTPError
