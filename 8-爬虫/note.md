@@ -86,3 +86,41 @@
         则引发HTTPError
         - URLError对应的一般是网络出现问题，包括URL问题
         - 关系区别：OSError- URLError- HTTPError
+
+- UserAgent
+    - UserAgent:用户代理，简称UA；属于heads的一部分，服务器通过UA来判断访问者身份
+    - 常见的UA值，使用的时候可以直接复制粘贴，也可以用浏览器访问的时候抓包
+    
+         1.Android
+         Mozilla/5.0 (Linux; Android 4.1.1; Nexus 7 Build/JR003D) AppleWebKit/535.19(KHTML,)
+         Mozilla/5.0 (Linux; U; Android 4.0.4; en-gb; GT-I9300 Build/IMM76D) AppleWebKit/534.
+         Mozilla/5.0 (Linux; U; Android 2.2; en-gb; GT-P1000 Build/FROYO) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1
+         
+         2. Firefox
+         Mozilla/5.0 (Windows NT 6.2; WOW64; rv:21.0) Gecko/20100101 Firefox/21.0
+         Mozilla/5.0 (Android; Mobile; rv:14.0) Gecko/14.0
+         
+         3. Google Chrome
+         Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.94 Safari/537.36
+         Mozilla/5.0 (Linux; Android 4.0.4； Galaxy Nexus Build/IMM76B) AppleWebKit/535.19 (KHTML, link Gecko) Chrome/18.0.1025.133 Mobile Safari/535.19
+         
+         4. iOS
+         Mozilla/5.0 (iPaid; CPU OS 5_0 like Mac OSX) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9A334 Safari/7534.48.3
+         Mozilla/5.0 (iPaid; U; CPU like Mac OSX; en) AppleWebKit/420.1 (KHTML, like Gecko) Version/3.0 Mobile/3A101a Safari/419.3
+    - 设置UA可以通过两种方式；
+        - heads
+        - add_header
+        - 案例v9 
+    - ProxyHandler 处理（代理服务器）
+        - 使用代理IP，是爬虫的常用手段
+        - 获取代理服务器地址：
+            - www.xicidiaili.com
+            - www.goubanjia.com
+        - 代理用来隐藏在真实访问中，代理也不允许频繁访问某一个固定网站，所以，代理一定要很多很多
+        - 基本使用步骤：
+            1.设置代理地址
+            2.创建ProxyHandler
+            3.创建Opener
+            4.安装Opener
+            
+        - 案例v10         
