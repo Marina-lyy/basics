@@ -111,16 +111,33 @@
         - heads
         - add_header
         - 案例v9 
-    - ProxyHandler 处理（代理服务器）
-        - 使用代理IP，是爬虫的常用手段
-        - 获取代理服务器地址：
-            - www.xicidiaili.com
-            - www.goubanjia.com
-        - 代理用来隐藏在真实访问中，代理也不允许频繁访问某一个固定网站，所以，代理一定要很多很多
-        - 基本使用步骤：
+- ProxyHandler 处理（代理服务器）
+    - 使用代理IP，是爬虫的常用手段
+    - 获取代理服务器的地址
+         - www.xicidiaili.com
+         - www.goubanjia.com
+    - 代理用来隐藏在真实访问中，代理也不允许频繁访问某一个固定网站，所以，代理一定要很多很多
+    - 基本使用步骤：
             1.设置代理地址
             2.创建ProxyHandler
             3.创建Opener
             4.安装Opener
             
-        - 案例v10         
+    - 案例v10         
+
+- cookie & session
+    - 由于http协议的无记忆性，人们为了弥补这个缺憾，所采用的一个补充协议
+    - cookie 是发放给用户（即http浏览器）的一段信息，session是保存在服务器上的对应另一半信息，用来记录用信息
+    
+- cookie 和 session 的区别
+    - 存放位置不同
+    - cookie 不安全
+    - session会保存在服务器上一定时间，会过期
+    - 单个cookie 保存数据不超过4K，很多浏览器限制一个站点最多保存20个
+    
+- session 的存放位置
+    - 存在服务器端
+    - 一般情况，session是放在内存中或者数据库中
+    - 没有cookie登录   案例v11  没有使用cookie则反馈网页为未登录状态
+    - 使用cookie复制下来，然后手动放入请求头，案例v12
+    
