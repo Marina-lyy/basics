@@ -139,5 +139,23 @@
     - 存在服务器端
     - 一般情况，session是放在内存中或者数据库中
     - 没有cookie登录   案例v11  没有使用cookie则反馈网页为未登录状态
-    - 使用cookie复制下来，然后手动放入请求头，案例v12
-    
+
+- 使用cookie登录
+    - 直接把cookie复制下来，然后手动放入请求头，案例v12
+    - http模块包含一些关于cookie的模块，通过他们我们可以自动使用cookie
+        - CookieJar
+            - 管理存储在cookie，向传出http请求添加cookie
+            - cookie存储在内存中，CookieJar实例回收后cookie将消失
+        - FileCookieJar（filename，delayload = None , policy = None)
+            - 使用文件管理cookie
+            - filename是保存cookie的文件
+        - MozillaCookieJar（filename，delayload = None，policy = None）；
+            - 创建与mozilla浏览器cookie，TXT兼容的FileCookieJar实例
+        - lwpCookieJar(filename, delayload = None , policy = None)
+            - 创建与libwww-perl 标准兼容的set-cookie格式的FileCookieJar实例
+        - 他们的关系是：CookieJar -> FileCookieJar -> MozillaCookieJar & LwpCookieJar
+        - 利用CookieJar访问从，案例v13
+            - 自动使用cookie登录，大致流程是
+            - 打开登录页面后自动通过用户密码登录
+            - 自动提取反馈回来的cookie
+            - 利用提取的cookie登录隐私页面
