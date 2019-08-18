@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格应用</title>
+</head>
+<body>
+    <!--单元格合并-->
+    <table border="1" width="800" height="500">
+        <tr>
+            <!--将单元格1和2进行合并-->
+            <td colspan="2">1</td>
+            <!--<td>2</td>-->
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <!-- 将单元格2和3,4进行合并  -->
+            <td>1</td>
+            <td colspan="3">2</td>
+<!--            <td>3</td>-->
+<!--            <td>4</td>-->
+            <td>5</td>
+        </tr>
+        <tr>
+            <!-- 将当前行的单元格1于下一行的单元格1合并-->
+            <td rowspan="2">1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <!--<td>1</td>-->
+            <td>2</td>
+            <td>3</td>
+            <!--将当前行内的4,5与下一行的4,5合并成一个单元格-->
+            <td rowspan="2" colspan="2">4</td>
+<!--            <td>5</td>-->
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+<!--            <td>4</td>-->
+<!--            <td>5</td>-->
+        </tr>
+    </table>
+</body>
+</html>
