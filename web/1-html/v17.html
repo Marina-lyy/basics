@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单标签</title>
+</head>
+<body>
+    <!--书写一个表单-->
+    <!--设定表单信息及范围（收集什么信息，给谁？什么方式-->
+    <form action="http://www.baidu.com" method="get">
+        <!--隐藏表单-->
+        <input type="hidden" name="userid" value="250" />
+        <!--单行文本输入框-->
+        <input type="text" name="username1" value="詹姆斯" size="30" maxlength="10" />
+        <hr />
+        <input type="text" name="username2" value="詹姆斯" readonly="readonly"/>
+        <hr />
+        <input type="text" name="username3" value="詹姆斯" disabled="disabled"/>
+        <hr />
+        <input type="password" name="username" value="" />
+        <hr />
+        <!--单选表单-->
+        <!--  按组出现，name值相同表示一组，value必须设置      -->
+        <input type="radio" name="sex" value="man" checked="checked" />男
+        <input type="radio" name="sex" value="women" />女
+        <input type="radio" name="sex" value="noman" />不男不女
+        <hr />
+        <!--多选表单-->
+        <!--按钮出现，name值相同表示一组，value必须设置-->
+        <input type="checkbox" name="hobby" value="lanqiu" checked="checked"/>篮球
+        <input type="checkbox" name="hobby" value="zuqiu" />足球
+        <input type="checkbox" name="hobby" value="meiqiu" checked="checked"/>煤球
+        <input type="checkbox" name="hobby" value="rouqiu" />肉球
+        <input type="checkbox" name="hobby" value="kanqiu" />看球
+        <hr />
+        <!--文件上传表单-->
+        <input type="file" name="face" />
+        <hr />
+        <!--重置按钮-->
+        <input type="reset" value="重新填写"/>
+        <hr />
+
+        <!--图片提交按钮（也是提交按钮）-->
+        <input type="image" src="./shuige.jpg" width="100"/>
+        <hr />
+        <!--下拉表单（单选）相当于 type=》radio-->
+        <select name="month1">
+            <option value="1">1月</option>
+            <option value="2" selected="selected">2月</option>
+            <option value="3">3月</option>
+            <option value="4">4月</option>
+            <option value="5">5月</option>
+            <option value="6">6月</option>
+        </select>
+        <hr />
+
+        <!--   下拉列表（多选） 相当于 type=》checkbox    -->
+        <select name="month2" multiple>
+            <option value="1">1月</option>
+            <option value="2" selected="selected">2月</option>
+            <option value="3">3月</option>
+            <option value="4" selected="selected">4月</option>
+            <option value="5">5月</option>
+            <option value="6">6月</option>
+        </select>
+        <hr />
+
+        <!--多行文本表单-->
+        <textarea name="grjl" rows="8" cols="188">此处省略1w字</textarea>
+        <hr />
+        <!--提交按钮-->
+        <input type="submit" />
+        <hr />
+        <!--  按钮组件      -->
+        <!--   使用button实现提交按钮     -->
+        <button type="submit">提交按钮</button>
+        <!--  重置按钮      -->
+        <hr />
+        <button type="reset">重置按钮</button>
+        <hr />
+        <!--   普通按钮     -->
+        <button type="button">普通按钮</button>
+    </form>
+</body>
+</html>

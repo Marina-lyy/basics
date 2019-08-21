@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>label标签</title>
+</head>
+<body>
+    <!--其他表单辅助标签-->
+    <form action="http://www.baidu.com" method="get">
+<!--        方法1 -->
+        <input type="radio" name="sex" id="one" value="man" />
+        <label for="one">男</label>
+<!--        方法2-->
+        <label for="two">
+            <input type="radio" name="sex" id="two" value="woman"/>女
+        </label>
+        <input type="radio" name="sex" value="noman" />不男不女
+    </form>
+</body>
+</html>

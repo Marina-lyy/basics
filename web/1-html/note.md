@@ -286,6 +286,157 @@
     用于声明一个完整的可以提交数据的表单范围
         action属性  设置当前表单数据提交的地址
         method属性  设置当前表单提交数据的方式
+        get提交（使用明信片发信）
+            1.明文传输，所有信息会在浏览器的地址栏显示
+            2.get方式提交的数据长度有限，受地址栏长度的限制
+        post提交（使用信封发送信息）
+            1.密文传输，所有信息都不会显示在地址栏中，在head头信息中发送
+            2.post方式提交数据长度几乎没有限制，因为服务器可以无限设置
+        enctype属性  设置当前表单提交数据的编码方式
+            application/x-www-form-urlencoded值 URL编码（默认值）
+            multipart/form-data值  上传文件必备值（必须记住）
+            text/plain值  基本不编码
+        target属性  设置提交页面的打开方式
+        值和a标签href属性一致
+#### 表单内容
+    input标签  输入表单
+        1.文本输入框
+        <input type="text" name="自定义名称" value="" />
+        type属性  text值  表示当前表单类型为文本输入框
+        name属性  设置当前表单提交数据的名称
+        value属性  设置当前表单的默认值或者提示信息（推荐作为默认值使用）
+        
+        2.密码输入框
+        <input type="password" name="自定义名称" value="" />
+        type属性  password值  表示当前表单为密码输入表单
+        name属性  设置当前表单提交数据的名称
+        value属性  设置当前表单的默认值（一般不设置）
+        
+        3.单选表单
+        <input type="radio" name="自定义名称" value="默认值" />
+        type属性  radio值  表示当前表单为单选表单
+        name属性  设置当前表单提交数据的名称，所有name属性值相同才可以实现单选
+        value属性  设置当前表单的默认值（必须填写，因为该表单无法输入内容）
+        
+        4.复选表单
+        <input type="checkbox" name="自定义名称"  value="默认值" />
+        type属性  checkbox值表示当前表单为复选表单
+        name属性  设置当前表单提交数据的名称，如果需要实现多选name属性后面必须添加[]
+        value属性  设置当前表单的默认值（必须填写，因为该表单无法输入内容）
+        
+        5.文件选取表单
+        <input type="file" name="自定义名称" value="" />
+        type属性  file表示当前表单为文件选取表单
+        name属性  设置当前表单提交数据的名称
+        value属性  设置表单的默认值（一般不写）
+        
+        6.提交按钮
+        <input type="submit" name="可以不填写" value="按钮名称" />
+        type属性  submit值  设置当前表单为提交按钮类型
+        name属性  设置当前按钮提交的名称（一般不需要填写）
+        value属性  设置当前按钮的名称
+        
+        7.重置按钮
+        <input type="reset" name="可以不填写" value="按钮名称" />
+        type属性  reset值  设置当前按钮为重置按钮
+        name属性  设置当前按钮提交的名称（一般不填写）
+        value属性  设置当前按钮的名称
+        
+        8.图片提交按钮
+        <input type="image" src="引入图片地址" name="可以不填写" value="可以不填写" />
+        type属性 image值 表示当前表单为图像提交按钮
+        src属性 用于引入图片的地址
+        name属性  用于设置 表单的名称（一般不填写）
+        value属性  按钮值（一般不写，根本不会显示）
+        
+        9.隐藏表单
+        <input type="hidden" name="自定义用户名" value="默认值" />
+        type属性  hidden值表示当前表单为隐藏表单
+        name属性  设置当前提交数据的名称（必须填写）
+        value属性  设置当前表单的默认值（必须填写）
+        
+    select标签
+        用于定义一个可以选择内容提交内容的下拉列表
+        下拉格式：
+            <select name="自定义名称">
+                <option value="提交值">显示内容</option>
+                <option value="提交值">显示内容</option>
+                ...
+            </select>
+        注意：如果option标签中不使用value属性，那么提交的时候会将option标签中的内容提交上去（不推荐）
+        
+        multiple属性  单属性没有值，设置当前列表为多选列表 
+        多选列表：
+            <select name="自定义名称" multiple>
+                <option value="提交值">显示内容</option>
+                <option value="提交值">显示内容</option>
+                ...
+            </select>
+        注意：多选列表如果要使用请在name后面添加[],和checkbox表单一样
+            如果想选取多个选项，需要按住Ctrl进行选取
+            
+        textarea标签  多行文本标签/文本域标签
+            
+            主要用于用户输入多行文本使用，input type=“text” 标签只可以输入单行不可以回车。
+            格式：
+                <textarea name="自定义名称" cols="列数（宽度）" rows="行数（高度）">
+                    默认值或者提醒值
+                </textarea>
+            注意：textarea标签没有value属性，值需要在开始和结束标签之间进行设置。
+        
+        button标签  多功能按钮标签
+            type属性
+                type="submit"  提交按钮（默认）
+                type="reset"  重置按钮
+                type="button"  普通按钮
+- 案例17                
+                
+#### 表单标签相关属性
+    尺寸相关的属性
+        size属性  设置input标签的长度
+            主要用于 input中的文本输入框和密码输入框，还可以用于多选列表
+        cols属性  设置文本域的宽度
+        rows属性  设置文本域的高度
+            主要用于textarea标签
+    内容长度限制属性
+        maxlength属性  设置表单允许输入的最大字符数
+            主要用于input类型的文本输入框和密码输入框即文本域标签
+    只读属性
+        readonly属性  设置表单内容只可以查看不可以修改
+            适用于input类型中的文本输入框，密码输入框及文本域标签
+    不可见属性
+        disabled属性  设置当前表单内容不会提交给服务器（服务器不可见）
+        注意：设置disabled表单不会被提交，当前表单内容不可以修改，并且背景变为灰色，
+    选中属性
+        checked属性  设置表单中默认选中的选项
+            适用于input标签的单选和复选表单。
+        selected属性  设置表单中的默认选中选项
+            适用于select下拉列表或者多选列表标签
+#### 表单中的其他内容
+    lable标签  为input表单添加标注，可以绑定文字和选项
+        格式1：
+        <label for="id名称">标注内容</label>
+        <input type="radio" name="sex" id="id名称" value="" />
+        
+        格式2：
+        <label for="id名称">
+            <input type="radio" name="sex" id="id名称" value=""/>标注内容
+        </label>
+    fieldset标签  为表单定义可见范围边框，同时可以配合legend添加标题
+        格式：
+            <form>
+                <fieldset>
+                    <legend>表单名称</legend>
+                    
+                    表单内容部分
+                </fieldset>
+            </form>
+        案例v18
+        
+        
+          
+        
+        
     
  
  
