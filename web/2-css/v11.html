@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪元素选择器</title>
+    <style>
+        /*正常状态*/
+        a:link{
+            color:green;
+        }
+        /*鼠标悬停*/
+        a:hover{
+            color:cyan;
+        }
+        /*鼠标点击状态*/
+        a:active{
+            color:yellow
+        }
+        /*访问过状态*/
+        a:visited{
+            color:red;
+        }
+        /*鼠标放到tr显示颜色*/
+        tr:hover{
+            background:pink
+        }
+        /*鼠标放到td显示颜色*/
+        td:hover{
+            background:green;
+        }
+    </style>
+</head>
+<body>
+<!--    四个状态：正常状态，鼠标悬停，鼠标点击状态，访问过状态-->
+    <a href="http://www.bilibili.com">bilibili</a>
+    <table border="1" width="300" height="300">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+    </table>
+</body>
+</html>
