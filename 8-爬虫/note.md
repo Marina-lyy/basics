@@ -212,3 +212,7 @@
     - 案例v21
 - get返回内容    
     - 案例v22
+    
+- post
+    - rsp = requests.post(url, data=data)
+    - 参看案例v23

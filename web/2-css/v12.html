@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>背景属性</title>
+    <style>
+        div{
+            width:500px;
+            height:500px;
+            border:1px solid red;
+            margin:10px;
+        }
+        /*为class=bg1设置背景颜色*/
+        .bg1{
+            background-color:blue;
+        }
+        /*为class=bg2设置背景图片*/
+        .bg2{
+            background-image:url(../gou.jpg);
+        }
+        /*为class=bg3设置背景图片,设置重复方式*/
+        .bg3{
+            background-image:url(../gou.jpg);
+            background-repeat:no-repeat;
+        }
+        /*为class=bg4设置背景图片,设置局中显示不重复*/
+        .bg4{
+            background-image:url(../gou.jpg);
+            background-repeat:no-repeat;
+            /*background-position:10% 50% 设置水平位置10% 垂直位置50%*/
+            /*background-position:100px 50px 设置水平位置100px 垂直位置50px*/
+            background-position:center; /*按照上下左右设定*/
+        }
+        /*为class=bg5设置背景图片,设置重复方式*/
+        .bg5{
+            background-image:url(../gou.jpg);
+            background-repeat:no-repeat;
+            background-position-x:center;
+            background-position-y:center;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg1">1</div>
+    <div class="bg2">2</div>
+    <div class="bg3">3</div>
+    <div class="bg4">4</div>
+    <div class="bg5">5</div>
+
+</body>
+</html>
