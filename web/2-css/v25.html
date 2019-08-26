@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>书写属性</title>
+    <style>
+        .one{
+            border:1px solid red;
+            direction:rtl;
+        }
+        .two{
+            border:1px solid red;
+            direction:rtl;
+            unicode-bidi:bidi-override;
+        }
+    </style>
+</head>
+<body>
+    <input value="我们新疆好地方。" />
+    <hr />
+    <input class="one" value="我们新疆好地方。" />
+    <hr />
+    <input class="two" value="我们新疆好地方。" />
+</body>
+</html>

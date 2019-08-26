@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文本标签</title>
+    <style>
+        .one{
+            width:200px;
+            height:200px;
+            border:1px solid red;
+            /*设置文本的水平对齐方式*/
+            text-align:center;
+        /*    设置文本的垂直对齐方式（无效）！*/
+            vertical-align:bottom;
+        }
+        .two{
+            width:200px;/*内联元素  无效！*/
+            height:200px; /*内联元素  无效*/
+            border:1px solid red;
+            vertical-align:bottom;
+        }
+        td{
+            vertical-align:bottom;
+        }
+        .three{
+            /*乔装打扮*/
+            display:table-cell;
+            width:200px;
+            height:200px;
+            border:1px solid red;
+            vertical-align:middle;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <p class="one">用飘柔就是这么自信！</p>
+    <b class="two">用飘柔就是这么自信！</b>
+    <hr />
+    <table border="1" width="200" height="200">
+        <tr>
+            <td>用飘柔就是这么自信！</td>
+        </tr>
+    </table>
+    <hr />
+    <div class="three">1</div>
+    <div class="three">2</div>
+</body>
+</html>
