@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定位关系（同样的定位方式下</title>
+    <style>
+        div{
+            width:200px;
+            height:200px;
+            position:absolute;
+        }
+        .one{
+            background:red;
+            z-index:5;
+        }
+        .two{
+            background:green;
+            left:100px;
+            top:100px;
+            z-index:7;
+        }
+        .three{
+            background:blue;
+            left:200px;
+            top:200px;
+            z-index:4;
+        }
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+</body>
+</html>

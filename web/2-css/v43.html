@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮动</title>
+    <style>
+        /*float属性会导致display属性失效*/
+        .left{
+            width:200px;
+            height:200px;
+            background:red;
+            float:left;
+        }
+        .center{
+            width:300px;
+            height:200px;
+            background:green;
+            float:left;
+            margin-left:100px;
+        }
+        .right{
+            width:200px;
+            height:200px;
+            background:blue;
+            float:right;
+        }
+        .abs{
+            height:100px;
+            background:purple;
+            clear:both;/*清除浮动，不会火灾别人的阴影之下*/
+        }
+    </style>
+</head>
+<body>
+    <div class="left"></div>
+    <div class="center"></div>
+    <div class="right"></div>
+    <hr />
+    <div class="abs"></div>
+</body>
+</html>
