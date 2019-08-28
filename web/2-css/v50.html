@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>盒子模型-内容</title>
+    <style>
+        .one,.two{
+            width:300px;
+            height:400px;
+            border:1px solid red;
+            background:green;
+        }
+        /*内容前面添加东西*/
+        .one:before{
+            content:'❤';
+        }
+        /*内容后面添加东西*/
+        .one:after{
+            content:'哈哈哈哈哈';
+        }
+        .two:before{
+            content:url("sn.jpg");
+        }
+    </style>
+</head>
+<body>
+    <div class="one">还是单身好</div>
+    <hr />
+    <div class="two">还是单身好</div>
+</body>
+</html>

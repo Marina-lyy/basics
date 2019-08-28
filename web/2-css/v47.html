@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>内补白属性</title>
+    <style>
+        .one{
+            width:200px;
+            height:200px;
+            border:1px solid red;
+        /*    顶部添加内补白属性*/
+            padding-top:50px;
+        /*    底部添加内补白属性*/
+            padding-bottom:50px;
+        /*    左侧添加内补白属性*/
+            padding-left:30px;
+        /*    右侧添加内补白属性*/
+            padding-right:30px;
+        }
+        .one_inner,.two_inner,.three_inner,.four_inner,.five_inner{
+            width:100px;
+            height:100px;
+            background:green;
+        }
+        .two{
+            width:200px;
+            height:200px;
+            border:1px solid red;
+        /*    综合属性 4个值 顺时针属写（上 右 下 左）*/
+            padding:30px 40px 30px 60px;
+
+        }
+        .three{
+            width:200px;
+            height:200px;
+            border:1px solid red;
+        /*   综合属性 3个值  （上  左右  下） 三条横线 */
+            padding:30px 50px 60px;
+        }
+        .four{
+            width:200px;
+            height:200px;
+            border:1px solid red;
+        /*    综合属性 2个值  （上下  左右） 十字架*/
+            padding:50px 100px;
+        }
+        .five{
+            width:200px;
+            height:200px;
+            border:1px solid red;
+        /*    综合属性  1个值*/
+            padding:50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">
+        <div class="one_inner"></div>
+    </div>
+    <hr />
+    <div class="two">
+        <div class="two_inner"></div>
+    </div>
+    <hr />
+    <div class="three">
+        <div class="three_inner"></div>
+    </div>
+    <hr />
+    <div class="four">
+        <div class="four_inner"></div>
+    </div>
+    <hr />
+    <div class="five">
+        <div class="five_inner"></div>
+    </div>
+</body>
+</html>
