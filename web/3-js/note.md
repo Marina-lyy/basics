@@ -22,3 +22,62 @@
     async属性  异步加载属性，js下载中的VIP，注意，仅改变下载顺序不改变执行顺序
     
 ## 三种js的使用方式
+    外链式js
+        <script src="文件路径"></script>
+        
+    嵌入式js
+        <script>
+            书写js代码；
+        </script>
+        
+    内联式js
+        <button 事件属性="js代码">按钮名称</button>
+        
+    推荐格式：
+        1.js的框架文件，一般使用外链式js。
+        2.局部性的js代码可以使用嵌入式js
+        3.内联式js尽量少用。
+        
+## js基本语法
+#### 变量
+    什么是变量？
+    x+y = 10  x=4  y=?  x=1  y=?  x=7  y=?
+    可以改变的量就是变量。
+    
+    声明规范：
+    var  变量名 = 值：  //声明并且赋值
+    案例js_06
+    var  变量名：      //声明但是不赋值
+    案例js_07
+    变量 = 值：       //不使用var关键字声明（不推荐）
+    案例js_08
+    
+    变量的规则：
+    1.声明变量必须使用var关键字
+    2.可以使用中英文当做变量名，但是不推荐使用中文。
+    3.可以使用数字，但是不能用数字开头。
+    4.不可以使用特殊字符，除了$和_(下划线）
+    5.变量名严格区分大小写。
+    6.变量的命名尽量有意义
+    7.变量名称不能和系统的保留关键字冲突。
+    
+    关键字：
+    break  do  instanceof  typeof
+    case  else  new  var  in  try
+    catch  finally  return  void
+    continue  for  switch  while
+    debugger  if  throw  delete
+    
+    保留字
+    abstract  enum  int  short 
+    boolean  export  interface  static
+    byte  extends  long  syper
+    char  float  package  throws
+    const  goto  private  transient
+    debugger  implements  protected  volatile
+    double  import  public
+    
+    如何避免和保留字关键字冲突
+    使用大写字母
+    使用特殊字符号$_
+    
