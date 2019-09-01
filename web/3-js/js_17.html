@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>显示数据类型转换</title>
+    <script>
+
+        //parseInt()强制将其他数据类型转换为整型（仅能够转换字符串和number，其余都是NaN
+        /* undefined
+        var var1 = undefined;
+        console.log(var1,typeof var1);
+        //转换操作
+        var result = parseInt(var1);
+        console.log(result,typeof result);
+
+        // number - 整型
+        var var1 = 250;
+        console.log(var1,typeof var1);
+        //转换操作
+        var result = parseInt(var1);
+        console.log(result,typeof result);
+
+        // number - 浮点型
+        var var1 = 250.38;
+        console.log(var1,typeof var1);
+        //转换操作
+        var result = parseInt(var1);
+        console.log(result,typeof result);
+
+        // number - NaN
+        var var1 = NaN;
+        console.log(var1,typeof var1);
+        //转换操作
+        var result = parseInt(var1);
+        console.log(result,typeof result);
+
+        // string - 纯数字
+        var var1 = '123456';
+        console.log(var1,typeof var1);
+        //转换操作
+        var result = parseInt(var1);
+        console.log(result,typeof result);
+
+        // string - 浮点格式
+        var var1 = '123.456';
+        console.log(var1,typeof var1);
+        //转换操作
+        var result = parseInt(var1);
+        console.log(result,typeof result);
+
+        // string - 带有非数字字符（数字后置）
+        var var1 = '23cm';
+        console.log(var1,typeof var1);
+        //转换操作
+        var result = parseInt(var1);
+        console.log(result,typeof result);
+
+        // string - 带有非数字字符（数字前置）
+        var var1 = 'ihave23cm';
+        console.log(var1,typeof var1);
+        //转换操作
+        var result = parseInt(var1);
+        console.log(result,typeof result);
+
+        // boolean
+        var var1 = false;
+        console.log(var1,typeof var1);
+        //转换操作
+        var result = parseInt(var1);
+        console.log(result,typeof result);
+
+        // function
+        var var1 = function(){
+            alert('树，新，蜜蜂 - Tree new bee')
+        };
+        console.log(var1,typeof var1);
+        //转换操作
+        var result = parseInt(var1);
+        console.log(result,typeof result);
+        */
+        //object
+        var var1 = new Object();
+        console.log(var1,typeof var1);
+        //转换操作
+        var result = parseInt(var1);
+        console.log(result,typeof result);
+        //1.undefined类型转换为NaN
+        //2.整型不需要转换
+        //3.浮点型转换，去掉小数部分，变为整型
+        //4.NaN转换之后任然是NaN类型
+        //5.出数字字符串，可以转换，浮点格式字符串，转换舍去小数部分，以数字开头的保留数字部分，以数字开头的保留数字部分转换其余部分舍去，以非数字开头转换结果都是NaN
+        //6.布尔类型转换为NaN
+        //7.function转换为NaN
+        //8.对象类型转换为NaN
+    </script>
+</head>
+<body>
+
+</body>
+</html>

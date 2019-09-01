@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>string类型转换</title>
+    <script>
+        //string类型转换
+        /*
+        //undefined
+        var var1 = undefined;
+        console.log(var1,typeof var1);
+        //类型转换
+        var result = String(var1);
+        console.log(result,typeof result);
+
+        //NaN
+        var var1 = NaN;
+        console.log(var1,typeof var1);
+        //类型转换
+        var result = String(var1);
+        console.log(result,typeof result);
+
+        //function
+        var var1 = function(){};
+        console.log(var1,typeof var1);
+        //类型转换
+        var result = String(var1);
+        console.log(result,typeof result);
+        */
+        //object
+        var var1 = new Object();
+        console.log(var1,typeof var1);
+        //类型转换
+        var result = String(var1);
+        console.log(result,typeof result);
+        //1.undefined 类型转为字符串，内容不变
+        //2.number  类型转为字符串，内容不变
+        //3.string   不需要转换
+        //4.boolean  类型转为字符串，内容不变
+        //5.function  类型转为字符串，内容不变
+        //6.object  [object object]  输出了对象的字符串内容   null转为字符串，内容不变
+    </script>
+</head>
+<body>
+
+</body>
+</html>

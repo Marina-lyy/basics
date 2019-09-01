@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>布尔类型转换</title>
+    <script>
+        //boolean转换
+        /*
+        //undefined
+        var var1 = undefined;
+        console.log(var1,typeof var1);
+        //转换操作
+        var result = Boolean(var1);
+        console.log(result,typeof result);
+
+        //number - int
+        var var1 = 10;
+        console.log(var1,typeof var1);
+        //转换操作
+        var result = Boolean(var1);
+        console.log(result,typeof result);
+
+        //number - float
+        var var1 = 10.3;
+        console.log(var1,typeof var1);
+        //转换操作
+        var result = Boolean(var1);
+        console.log(result,typeof result);
+
+        //number - Na
+        var var1 = NaN;
+        console.log(var1,typeof var1);
+        //转换操作
+        var result = Boolean(var1);
+        console.log(result,typeof result);
+
+        //string
+        var var1 = 'd';
+        console.log(var1,typeof var1);
+        //转换操作
+        var result = Boolean(var1);
+        console.log(result,typeof result);
+
+        //function
+        var var1 = function(){};
+        console.log(var1,typeof var1);
+        //转换操作
+        var result = Boolean(var1);
+        console.log(result,typeof result);
+
+        //object
+        var var1 = new Object();
+        console.log(var1,typeof var1);
+        //转换操作
+        var result = Boolean(var1);
+        console.log(result,typeof result);
+        */
+        //null
+        var var1 = null;
+        console.log(var1,typeof var1);
+        //转换操作
+        var result = Boolean(var1);
+        console.log(result,typeof result);
+
+        //1.undefined:false
+        //2.number - int       0:false   其余都是TRUE
+        //3.number - float     0.0:false   其余都是TRUE
+        //4.number - NaN false
+        //5.string  除了空字符串（只有引号没有内容‘’），其余都是TRUE
+        //6.boolean 不需要转换
+        //7.function  都是TRUE
+        //8.object  都是TRUE  null：FALSE
+    </script>
+</head>
+<body>
+
+</body>
+</html>
