@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮点型</title>
+    <script>
+        //数据类型-number   数值类型
+        //1.整型->就是整数
+
+        var no1 = 250;
+        //数据类型
+        console.log(typeof no1);
+        //值
+        console.log(no1);
+
+        //方法2：八进制    只能使用0-7八个数字
+        var no2 = 0123;
+        console.log(typeof on2);
+        console.log(no2);
+
+        //方法3：十六进制声明整数  0-9A-F  字母不区分大小写
+        var no3 = 0x12af;
+        console.log(typeof no3);
+        console.log(no3);
+
+        //2.浮点类型  就是小数
+        //方法1：小数
+        var no4 = 0.03;
+        console.log(typeof no4);
+        console.log(no4);
+
+        //方法2：科学计数法
+        var no5 = 314e2;  //代表314*10的2次方
+        console.log(typeof no5);
+        console.log(no5);
+
+        //奇怪的写法：
+        console.log(.5);
+        console.log(5.);
+
+        //3.NaN : No a Number  不是一个数字！
+        //自己定义NaN
+        var no6 = NaN;
+        console.log(typeof no6);
+        console.log(no6);
+
+        //运算结果
+        var no7 = 1 - '你大爷';
+        console.log(typeof no7);
+        console.log(no7);
+
+        //判断
+        console.log(NaN == NaN);
+        console.log(NaN+1);
+
+        //唯一NaN专用检测功能
+        var no8 = NaN;
+        result = isNaN(no8);
+        console.log(result);
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

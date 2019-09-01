@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>字符串声明方式</title>
+    <script>
+        //字符表示单个文字  你，我、捞、空、a, b ,c ,13,4,
+        //字符串  连续的多个字符  你功夫孬就不用夯昆。。
+
+        //2.数据类型-string
+
+        //声明字符串（单引号）
+        var str1 = '在听课的都是爱学习的，没事别掺和直播';
+        //检测数据类型
+        console.log(typeof str1);
+        //输出变量的值
+        console.log(str1);
+
+        //声明字符串（双引号）
+        var str2 = "因为直播行业就是青春饭";
+        //检测数据类型
+        console.log(typeof str2);
+        //输出变量的值
+        console.log(str2);
+
+        //字符串的变量解析
+        var a = '直播干不长';
+        var b = '可以学编程';
+        var c = '编程可以干到死! ' + 'a';
+
+        //输出变量c，a
+        console.log(c,a);
+
+        //转义字符的问题  --转换意义：可以增加功能，也可以去掉功能
+        //输出一个回车字符
+        console.log('我\\喜欢\n小\'萝\'\t莉');
+        console.log("我喜欢\n霸道\t\"御\"姐");
+
+        //单双引号互相插入的问题，可以互相插入
+        console.log('摆正三观，好好学习');
+        console.log("么事别掺和'乱七八糟'的东西")
+    </script>
+</head>
+<body>
+
+</body>
+</html>
