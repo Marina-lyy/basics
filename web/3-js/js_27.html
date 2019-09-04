@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>按位运算</title>
+    <script>
+        //1. & 按位与运算
+        var no1 = 55;//110111
+        var no2 = 34;//100010
+        ////////////////////
+        //////////////100010
+
+        var result = no1 & no2;
+        console.log(result);
+        //2. | 按位或运算
+        var no1 = 55;//110111
+        var no2 = 34;//100010
+        ////////////////////
+        //////////////110111
+
+        var result = no1 | no2;
+        console.log(result);
+        //3. ~ 按位非运算
+        var no = 12;//1100 -> 0011【涉及计算机存储的反码与补码。愿意看自己去看吧】
+        var result = ~no;
+        console.log(result);//输出 -13
+
+        //4. ^ 按位抑或运算
+        var no1 = 55;//110111
+        var no2 = 34;//100010
+        ////////////////////
+        //////////////010101
+
+        var result = no1 ^ no2;
+        console.log(result);//21
+
+        //5. << 左移运算(乘2运算）  要远快于算数运算的
+        var no = 55;
+        var result = no << 3;
+        console.log(result);//220
+
+        //6. >> 右移运算(一般除于2 -》除以2取整数部分）
+        var no = 55;
+        var result = no >> 1;
+        console.log(result);//27
+    </script>
+</head>
+<body>
+
+</body>
+</html>
