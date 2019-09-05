@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>多项分支2</title>
+    <script>
+        //switch..case分支可以走一个分支也可以走多个连续的分支
+
+        /*
+        switch(变量）{//不能是浮点型，只能是整型，字符串和布尔值
+            case 值1：
+                一条js代码；
+                一条js代码；
+                ...
+            case 值2：
+                一条js代码；
+                一条js代码；
+                ...
+             case 值3：
+                一条js代码；
+                一条js代码；
+                ...
+             default:
+                一条js代码；
+                一条js代码
+                ...
+        }
+
+
+        var weekday = 3;
+        switch (weekday){//不能是浮点型，只能是整型，字符串和布尔值
+            case 1:
+                console.log('今天是周一，我们吃西红柿炒番茄');
+            case 2:
+                console.log('今天是周二，');
+            case 3:
+                console.log('今天是周三，');
+            case 4:
+                console.log('今天是周四');
+            case 5:
+                console.log('今天是周五');
+            default:
+                console.log('今天是周末，不起床，饿着');
+        }
+
+         */
+        //模拟if else if  ..else多项分支，只能执行一个分支
+        var weekday = 3;
+        switch (weekday){//不能是浮点型，只能是整型，字符串和布尔值
+            case 1:
+                console.log('今天是周一，我们吃西红柿炒番茄');
+                break;//破坏分支
+            case 2:
+                console.log('今天是周二，');
+                break;//破坏分支
+            case 3:
+                console.log('今天是周三，');
+                break;//破坏分支
+            case 4:
+                console.log('今天是周四');
+                break;//破坏分支
+            case 5:
+                console.log('今天是周五');
+                break;//破坏分支
+            default:
+                console.log('今天是周末，不起床，饿着');
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

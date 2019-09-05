@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>举例</title>
+    <script>
+        //考试等级分类
+        //满分            100
+        //优秀            85<=cj<100
+        //良好            75<=cj<85
+        //及格            60<=cj<75
+        //不及格          cj<60
+        /*
+        //只能使用if 多项分支
+        var cj = 100;
+        if(cj == 100){
+            alert('100分！爱因斯坦在世啊！')
+        }else if(cj >=85 && cj<100){
+            alert('优秀的娃娃')
+        }else if(cj >=75 && cj < 80){
+            alert('状态良好')
+        }else if(cj >=60 && cj <75){
+            alert('及格万岁')
+        }else{
+            alert('不及格，请家长')
+        }
+        */
+        var cj = 60;
+        if(cj == 100){//全分数段
+            alert('100分！爱因斯坦在世啊！')
+        }else if(cj >=90){
+            alert('优秀的娃娃')
+        }else if(cj >=75){
+            alert('状态良好')
+        }else if(cj >=60){
+            alert('及格万岁')
+        }else{
+            alert('不及格，请家长')
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

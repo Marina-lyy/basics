@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>巢状分支</title>
+    <script>
+        //住在小区
+        //小区门
+        //楼门
+        //家门
+        var xiaoqudoor = true;
+        var loudoor = false;
+        var jiadoor = true;
+
+        //回家
+        console.log('高高兴兴回家，来到了小区门口');
+        if (xiaoqudoor == true){
+            console.log('小区门开着，走进小区门，来到楼门口');
+            if (loudoor == true){
+                console.log('楼门开着，走进楼门，来到家门口');
+                if (jiadoor == true){
+                    console.log('家门开着，终于回到家了');
+                }else{
+                    console.log('家门没开，老婆开门啊');
+                }
+            }else{
+                console.log('楼门没开，保安，开楼门啊');
+            }
+        }else{
+            console.log('小区门没开，保安，开门啊');
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
