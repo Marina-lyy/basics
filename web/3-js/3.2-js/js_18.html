@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>with语句</title>
+    <script>
+        //声明一个对象
+        var ch = new Object;
+        //向对象中添加内容
+        ch.name = '丛浩';
+        ch.sex = 'man';
+        ch.length = '23cm';
+        ch.radius = '6cm';
+
+        console.log(ch);
+        //输出对象中的内容 采用了【对象，内容】的方式获取值
+        console.log(ch.name);
+        console.log(ch.length);
+        console.log(ch.radius);
+
+        //with语法  节省代码
+        with(ch){//请注意，以下内容都是ch中的内容
+            console.log(name,length,radius);
+            console.log(length);
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

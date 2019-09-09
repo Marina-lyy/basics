@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>for..in循环</title>
+    <script>
+        //for..in循环  专用遍历对象的循环
+        /*
+        for(var 变量 in 对象）{
+            使用对象中的内容；
+        }
+         */
+        //声明一个对象
+        var ch = new Object;
+        //向对象中添加内容
+        ch.name = '丛浩';
+        ch.sex = 'man';
+        ch.length = '23cm';
+        ch.radius = '6cm';
+
+        console.log(ch);
+        for(var attr in ch){
+            console.log(attr, ch[attr])
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
