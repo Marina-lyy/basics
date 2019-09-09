@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>制作表格</title>
+    <script>
+        /*
+        //制作表格  10*10
+        document.write('<table border="1" width="500">');
+            for (var j = 0; j < 10; j++) {
+                document.write('<tr>');
+                for (var i = 0; i < 10; i++) {
+                    document.write('<td>'+i+j+'</td>');
+                }
+                document.write('</tr>');
+            }
+        document.write('</table>');
+        */
+        //函数的概念：特定功能的代码
+        //制作表格  10*10
+        function mytable() {
+            document.write('<table border="1" width="500">');
+            for (var j = 0; j < 10; j++) {
+                document.write('<tr>');
+                for (var i = 0; i < 10; i++) {
+                    document.write('<td>' + i + j + '</td>');
+                }
+                document.write('</tr>');
+            }
+            document.write('</table>');
+        }
+        //拿功能来用
+        mytable();
+        mytable();
+        mytable();
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

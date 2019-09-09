@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>完整结构</title>
+    <script>
+        /*
+        function 名称（参数，参数，参数。。。）{
+            //功能代码
+            [return 代码}
+        }
+         */
+        function mytable(hang,lie) {//形参：形式上的参数,没有值（默认为undefined）
+           console.log(hang,lie);
+
+            document.write('<table border="1" width="500">');
+            for (var j = 0; j < hang; j++) {
+                document.write('<tr>');
+                for (var i = 0; i < lie; i++) {
+                    document.write('<td>' + i + j + '</td>');
+                }
+                document.write('</tr>');
+            }
+            document.write('</table>');
+        }
+        //10行10列表格
+        mytable(10,10);//实参：实际的参数，是真实的数据！
+        //7行8列
+        mytable(7,5);
+        //9行9列
+        mytable(5,9);
+
+        //实参将数据传递给形参的过程就是变量赋值！
+    </script>
+</head>
+<body>
+
+</body>
+</html>
