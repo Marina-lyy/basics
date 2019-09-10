@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>全局变量</title>
+    <script>
+        //全局变量：在函数外部使用var声明的变量就是全局变量
+        var mzj = '不疼不疼';//变量
+
+        //声明一个函数//局部环境
+        function juhua(){
+            //2.在函数内部使用全局变量变量
+            document.write(mzj);
+        }
+        //1.在函数外部使用全局变量
+        console.log(mzj);
+        //2.调用函数
+        juhua();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

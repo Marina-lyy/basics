@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>回调函数</title>
+    <script>
+        //加函数
+        function jia(x,y){
+            return x + y;
+        }
+        //减函数
+        function jian(x,y){
+            return x - y;
+        }
+        //乘函数
+        function cheng(x,y){
+            return x * y;
+        }
+        //除函数
+        function chu(x,y){
+            return x / y;
+        }
+        function jsq(a,b,fh){
+            //return fh(a,b);//回调函数的标准应用
+            var result = fh(a,b);
+            return result;
+        }
+        console.log(jsq(2,5,jia));
+        console.log(jsq(2,5,jian));
+        console.log(jsq(2,5,cheng));
+        console.log(jsq(2,5,chu));
+    </script>
+</head>
+<body>
+
+</body>
+</html>

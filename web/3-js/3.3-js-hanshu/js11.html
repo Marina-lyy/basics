@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>回调函数</title>
+    <script>
+        //加函数
+        function jia(x,y){
+            return x + y;
+        }
+        //减函数
+        function jian(x,y){
+            return x - y;
+        }
+        //乘函数
+        function cheng(x,y){
+            return x * y;
+        }
+        //除函数
+        function chu(x,y){
+            return x / y;
+        }
+        function jsq(a,b,fh){
+            //运算判断
+            switch(fh){
+                case '+':
+                    var result = jia(a,b);//调用其他函数
+                    return result;
+                case '-':
+                    var result = jian(a,b);//调用其他函数
+                    return result;
+                case '*':
+                    var result = cheng(a,b);//调用其他函数
+                    return result;
+                case '/':
+                    var result = chu(a,b);//调用其他函数
+                    return result;
+                default:
+                    return false;
+            }
+        }
+        console.log(jsq(2,5,'jia'));
+        console.log(jsq(2,5,'jian'));
+        console.log(jsq(2,5,'cheng'));
+        console.log(jsq(2,5,'chu'));
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

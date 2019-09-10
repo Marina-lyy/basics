@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>递归函数</title>
+    <script>
+        //四则运算计算器
+        function jsq(a,b,fh){
+
+            switch(fh){
+                case '+'://实现加法运算
+                    result = a + b;
+                    return result;
+                case '-'://实现减法运算
+                    result = a - b;
+                    return result;
+                case '*'://实现乘法运算
+                    result = a * b;
+                    return result;
+                case '/'://实现除法运算
+                    result = a / b;
+                    return result;
+                default://乱写的符号走这里
+                    return false;
+            }
+        }
+        //调用函数  2+5
+        var x = jsq(2,5,'+');
+        console.log(x);
+        //调用函数  2-5
+        console.log(jsq(2,5,'-'));
+        //调用函数  2*5
+        console.log(jsq(2,5,'*'));
+        //调用函数  2/5
+        console.log(jsq(2,5,'/'));
+    </script>
+</head>
+<body>
+
+</body>
+</html>

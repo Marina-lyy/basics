@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>回调函数</title>
+    <script>
+        //函数本身也是一个真实的数据
+        function myfunc(){
+            alert('世界上最悲催的男人就是那个创造了苦逼这个词的男人')
+        }
+        //定义另外一个函数
+        function yourfunc(arg){
+            console.log(arg,typeof arg);
+            //调用函数？
+            arg();//本质上就是调用myfunc();
+        }
+        //调用yourfunc
+        yourfunc(myfunc);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

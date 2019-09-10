@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>全局变量</title>
+    <script>
+        //声明函数
+        function juhua(){
+            //定义变量(在函数中不使用var）
+            mzj = '不疼不疼';
+            //2.在局部环境中访问局部变量
+            document.write(mzj);
+        }
+        //1.在局部范围中访问局部变量（访问不了局部变量）
+        juhua();
+        console.log(mzj);
+
+        //2.调用
+        juhua();
+    </script>
+</head>
+<body>
+
+</body>
+</html>
