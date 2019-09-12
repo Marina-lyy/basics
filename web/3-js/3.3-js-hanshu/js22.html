@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>回调函数</title>
+    <script>
+        //计算任意个数值的和
+        function sum(){
+            /*
+            //arguments对象(保存函数信息的变量-函数本身、实参传入内容、其他）
+            console.log(arguments);
+            console.log(arguments[0]);//数组访问方式[21,3,4,5,6]编号从0开始
+            console.log(arguments[1]);
+            console.log(arguments[2]);
+            console.log(arguments[3]);
+            console.log(arguments[4]);
+
+            console.log('传入实参个数：'+arguments.length);
+             */
+            var total = 0;
+            //循环操作 遍历所有实参
+            for(var i = 0;i<arguments.length;i++){
+                //参数累加
+                total += arguments[i];
+            }
+            console.log(total);
+        }
+        //调用函数
+        sum(21,3,4,5,6);
+
+        sum(2,3,4);
+
+        sum(2,3,1,2,4,234,43,5,456,456,23,234,234,567,567);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

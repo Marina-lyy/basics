@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>闭包</title>
+    <script>
+        function juhua_home(){
+            var tv = '21寸的黑白大彩电';
+            var wash_mochine = '滚蛋洗衣机';
+            var deng = '手瑶电筒';
+
+            //内部函数-局部变量
+            function father(){
+                //人可以带东西出来
+            }
+            function mother(){
+
+            }
+            function bother(){
+
+            }
+            return function(){
+                //访问家中东西
+                return wash_mochine;
+            }
+        }
+        //调用函数，我接收菊花妹妹
+        var ch = juhua_home();//ch 接收菊花本人【洗衣机】
+        //获取洗衣机
+        var xyj = ch();
+        console.log(xyj);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

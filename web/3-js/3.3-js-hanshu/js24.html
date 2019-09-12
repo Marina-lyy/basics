@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>递归函数</title>
+    <script>
+        function digui(num){
+            console.log(num);
+            if(num >=0){
+                //调用函数本身（而不是函数名，函数可以改变！）
+                arguments.callee(num-1);
+                //console.log(arguments.callee);
+            }else{
+                console.log('----------------------')
+            }
+            console.log(num);
+        }
+        //digui(3);
+        //将函数赋值给其他变量
+        var tubie = digui;
+        //重新赋值digui为其他内容
+        digui = null;
+        //调用tubie函数
+        tubie(4);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

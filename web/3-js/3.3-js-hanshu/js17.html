@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>内部函数</title>
+    <script>
+        //作用域链条
+        var boss = '习大大';
+
+        //直接访问变量
+        console.log('全国访问：'+boss);
+
+        //定义函数（河北省）
+        function hebei(){
+            //访问变量boss
+            console.log('河北省内访问：'+boss);
+            //定义函数（石家庄）
+            function shijiazhuang(){
+                //访问变量boss
+                console.log('石家庄内访问：'+boss);
+                //定义函数（辛集市）
+                function xinji(){
+                    console.log('辛集市内访问：'+boss);
+                }
+                 //调用辛集市函数
+                xinji();
+            }
+            //调用石家庄函数
+            shijiazhuang()
+        }
+        hebei();
+    </script>
+</head>
+<body>
+</body>
+</html>

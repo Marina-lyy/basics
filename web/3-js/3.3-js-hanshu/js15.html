@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>内部函数</title>
+    <script>
+        //在函数内部定义的函数
+        function outer(){
+            //定义内部函数
+            inner();
+            function inner(){
+                alert('青丘蛋疼');
+            }
+            //调用内部函数
+            //inner();
+        }
+        //调用函数outer（）
+        //outer();
+
+        //内部函数的使用特性！
+        //1.内部函数能否在函数外部调用（不能使用）
+        // inner();
+        //2.内部函数在函数内部是否可以调用？(可以）
+        //outer();
+        //3.内部函数在函数内部调用是否有先后顺序。(不分先后)
+        outer();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

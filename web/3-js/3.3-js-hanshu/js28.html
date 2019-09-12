@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>感应</title>
+    <script>
+        //声明一个函数
+        function hello(){
+            //判断是谁调用了函数
+            if(arguments.callee.caller == zhangsan){//如果张三调用
+                console.log('初次见面，你好！');//陌生人
+            }else if(arguments.callee.caller == lisi){//如果李四
+                console.log('嗨，你吃了没');//熟人
+            }
+        }
+        //人物1   张三遇到了陌生人
+        function zhangsan(){
+            hello();
+        }
+        //调用函数
+        zhangsan();
+        //人物2   李四遇到了熟人
+        function lisi(){
+            hello();
+        }
+        lisi();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

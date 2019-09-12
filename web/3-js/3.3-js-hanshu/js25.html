@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>闭包</title>
+    <script>
+        //闭包1（潜入）
+
+        var ch;//丛浩-全局变量
+
+        //声明函数
+        function juhua_home(){
+            //局部变量
+
+            var tv = '21寸的黑白大彩电';
+            var wash_mochine = '滚蛋洗衣机';
+            var deng = '手瑶电筒';
+
+            //内部函数-局部变量
+            var father = function(){
+                //人可以带东西出来
+            };
+            var mother = function(){
+
+            };
+            var bother = function(){
+
+            };
+            var juhua = function(){
+
+            };
+            //进入家中（干亲）
+            ch = function(){
+        //在函数外部能够访问局部变量
+        console.log(ch);//东西在你身上
+                //准备带东西出来
+                return tv;
+            }
+        }//1.函数运行完毕，无法清除TV变量，TV变量还被其他函数所使用。
+        //访问函数
+        juhua_home();
+        //取出局部变量
+        var ds = ch();//调用函数，获得返回值
+        console.log(ds);
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

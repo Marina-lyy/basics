@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>内部函数</title>
+    <script>
+
+        //jsq函数
+        function jsq(x,y,fh){
+            //加函数
+            function jia(a,b){
+                return a + b;
+            }
+            //减函数
+            function jian(a,b){
+                return a - b;
+            }
+            //乘函数
+            function cheng(a,b){
+                return a * b;
+            }
+            //除函数
+            function chu(a,b){
+                return a / b;
+            }
+            //判断符号
+            switch(fh){
+                case 'jia':
+                    return jia(x,y);
+                case 'jian':
+                    return jia(x,y);
+                case 'cheng':
+                    return cheng(x,y);
+                case 'chu':
+                    return chu(x,y);
+            }
+        }
+
+        //调用函数
+        console.log(jsq(2,5,'cheng'));
+    </script>
+</head>
+<body>
+
+</body>
+</html>

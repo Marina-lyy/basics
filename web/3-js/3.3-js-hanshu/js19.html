@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表达式函数</title>
+    <script>
+        //表达式函数的内部函数特征
+        //定义函数
+        function outer(){
+            //调用函数
+            inner();
+            //内部函数（局部变量）
+            inner();
+            var inner = function(){
+                alert('年轻的时候顶风尿三丈，现在这岁数，顺风尿一鞋');
+            }
+        }
+        //outer();
+        //1.外部调用（不能）
+        //inner();
+        //2.内部调用(能）
+        //outer();
+        //3.先后顺序(表达式函数要强制按照顺序结构定义！）
+        outer();
+    </script>
+</head>
+<body>
+
+</body>
+</html>
