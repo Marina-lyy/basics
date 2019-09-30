@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Boolean</title>
+    <script>
+        //Boolean对象原型（构造方法）
+
+        //制作对象实例
+        var b = new Boolean();
+        console.log(b);//实例
+        console.log(b.__proto__);//原型
+
+        //注意：当前对象原型的作用只是用来创造布尔类型的数据而已：还不用你自己调用
+
+        var b = true;
+        console.log(b);//布尔类型，也真是的Boolean的对象实例
+        console.log(b instanceof Boolean);//false  系统隐式调用的原型
+
+        //系统工作步骤
+        var b = new Boolean(true);//该步骤相当于var b = true;的过程
+        console.log(b);//布尔类型，也真是的Boolean的对象实例
+        console.log(b instanceof Boolean);//true  人工显示调用的原型
+
+        //数据类型转换
+        //new Boolean() 制作一个Boolean的对象实例【构造方法】
+        //Boolean（123）使用Boolean函数转换其他数据类型到布尔值【函数】
+
+        //构造方法-》方法-》函数  三者没有本质区别，有使用区别
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

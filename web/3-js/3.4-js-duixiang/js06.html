@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>对象遍历</title>
+    <script>
+        //实例化对象
+        var ynr = {
+            //属性
+            age:18,
+            sex:'女',
+            hobby:'吹牛',
+            eye:2,
+
+            //方法
+            eat:function(){
+                alert('吹牛，每个人都会')
+            },
+            drink:function(){
+                alert('泉水')
+            }
+        };
+        //遍历对象，把对象成员挨个数一遍
+        for(var i in ynr){
+            console.log(i,ynr[i]);//i获取对象的成员名称  对象【i】获取对象的值！
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

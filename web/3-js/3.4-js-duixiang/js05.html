@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js使用</title>
+    <script>
+        var obj = new Object();
+        obj.name = '小李';
+        obj.sex = '女';
+        obj.age = '18';
+        obj.eat = function(){
+            alert('今晚的君子汤真好喝');
+        };
+        console.log(obj);
+
+        //使用对象成员
+        console.log(obj.name);
+        //obj.eat();//调用函数
+
+        //修改成员
+        obj.age = 28;
+        obj.eat = function(){
+            alert('你这个渣男')
+        };
+        console.log(obj);
+
+        //删除对象成员
+        delete obj.sex;
+        delete obj.eat; //别加（），那是调用
+    </script>
+</head>
+<body>
+
+</body>
+</html>

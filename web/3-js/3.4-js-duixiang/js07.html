@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>对象原型</title>
+    <script>
+        //Object对象原型（万物之始）
+
+        //对象原型也是对象
+
+        //查看Object对象中的内容
+        //console.log(Object);//查看的内容是Object对应的构造方法
+
+        //查看Object对象的原型
+        //console.log(Object.prototype);
+
+        //通过对象实例查找构造方法
+        //1.实例化一个对象
+        //var obj = new Object();//obj就是制作的对象实例
+        //var obj = {};//同上
+        //2.查看实例的构造方法
+        //console.log(obj.constructor);
+
+        //通过对象实例查找对象原型
+        //1.实例化一个对象
+        //var obj = new Object();
+        //2.先查找构造方法
+        //var con = obj.constructor;//con构造方法
+        //3.通过构造方法查找原型
+        //console.log(con.prototype);
+
+        //浏览器提供快捷的对象原型查找方法
+        //1.实例化一个对象
+        var obj = new Object();
+        //2.通过实例直接访问对象原型
+        console.log(obj.__proto__);//仅对特定浏览器有效 webkit内核 + IE内核
+    </script>
+</head>
+<body>
+
+</body>
+</html>

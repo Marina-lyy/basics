@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>function</title>
+    <script>
+        //Function对象原型
+        //学习过的函数（声明函数）
+        function sum(a,b){
+            return a+b;
+        }
+        //调用函数
+        console.log(sum(5,9));
+
+        //匿名函数/表达式函数
+        var he = function(a,b){
+            return a+b;
+        };
+        //调用函数
+        console.log(he(9,9));
+
+        //系统隐式调用的操作
+        var obj = new Function('a','b','return a + b');
+        console.log(obj(5,5));
+    </script>
+</head>
+<body>
+
+</body>
+</html>

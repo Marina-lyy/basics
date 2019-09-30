@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Global</title>
+    <script>
+        //Global对象实例！固有对象！本来就是实例的对象！而且不能new
+        //Global是js
+        //ECMAscript语法中的对象，不能直接用，必须由解释器（宿主）实现才可以使用
+
+        //在浏览器中Global的最终实现为window对象
+        console.log(window);
+
+        //1.学习Global对象自带的方法（不多）
+        //isNaN（）检测数据是否是NaN
+        var no = 9;
+        console.log(isNaN(no));//函数
+        console.log(window.isNaN(no));//方法
+
+        //函数和方法
+        //1.函数是直接调用，方法是通过对象调用的。本质是一个东西。
+        //2.函数也是方法，因为他是Global对象的方法
+        //3.为了防止混肴。通用称呼，属于window/Global的方法称之为函数，其余的称之为方法
+        function sum(a,b){
+            console.log(a+b);
+        }
+        //调用函数(直接）
+        sum(5,6);
+        //调用方法（通过对象调用）
+        window.sum(5,6)
+    </script>
+</head>
+<body>
+
+</body>
+</html>
