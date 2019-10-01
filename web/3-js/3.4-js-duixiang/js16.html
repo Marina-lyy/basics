@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Date</title>
+    <script>
+        //时间对象  Date
+
+        //实例化一个当前时间对象
+        var date = new Date();
+        console.log(date);//自动触发toString
+        console.log(date.valueOf());
+
+        //实例化指定时间对象(时间字符串格式）
+        //方法1：使用时间字符串
+        //var hk = new Date('1997/7/1 0:0:0'); //1997年7月1日 0:0:0
+        var hk = new Date('1997-7-1 0:0:0'); //1997年7月1日 0:0:0
+        console.log(hk);
+
+        //拆解步骤
+        //1.定义时间字符串
+        var datestr = '1997-7-1 0:0:0';
+        //2.自动解析为时间戳（放入Date之后）
+        var sjc = Date.parse(datestr);
+        console.log(sjc);
+        //3.将时间戳放入Date（）
+        var hk = new Date(sjc);
+        console.log(hk);
+
+        //方法2：直接使用时间戳
+        var zero = new Date(24*3600*1000);//毫秒时间戳
+        console.log(zero);
+
+        //方法3：使用多个时间参数
+        var thatdate = new Date(1949,10,1,0,0,0,0);
+        console.log(thatdate);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

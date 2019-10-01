@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Math</title>
+    <script>
+        //Math对象  固有对象（对象实例）
+        //将数学相关的函数归类到当前对象当中
+
+        //abs()  获取数据的绝对值
+        var no = -1;
+        var result = Math.abs(no);
+        console.log(result);
+
+        //ceil() 进一法取整
+        var no = 9.01;
+        var result = Math.ceil(no);
+        console.log(result);
+
+        //floor() 舍一法取整
+        var no = 9.01;
+        var result = Math.floor(no);
+        console.log(result);
+
+        //round() 四舍五入
+        var no = 9.49;
+        var result = Math.round(no);
+        console.log(result);
+
+        //random() 获取0-1之间的随机小数，包含0但是不包含1
+        var no = Math.random();
+        console.log(no);
+
+        //随机整数（？）0-255
+        var no = Math.floor(Math.random() * 256);  //随机0-255的数字
+        console.log(no);
+
+        //max() 获取多个数值中最大的值
+        var result = Math.max(2,3,4,56,7,654,342,2345,346);
+        console.log(result);
+
+        //min()  获取多个数值中的最小值
+        var result = Math.min(3,445,56,56,232,243652,34,435);
+        console.log(result);
+
+        //pow()  计算n次方
+        var result = 2 * 2 * 2 * 2;
+        var result1 = Math.pow(2,4);
+        console.log(result,result1);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -170,3 +170,103 @@
         decodeURI（）  解码encodeURI（）。
         encodeURIComponent（）  能编码"; / ? : @ & = + $ , #"这些特殊字符
         decodeURIComponent（）  解码encodeURIComponent（）
+        案例js14
+        
+### Math对象
+    Math对像也是系统中的一个固有对象，不需要用户创建就可以使用
+    作为：为js提供数据函数相关的支持
+    
+    abs()  获取一个数值的绝对值
+    ceil（）  进一法取整
+    floor（）  舍一法取整
+    round（）  四舍五入
+    random（）  获取0-1之间的随机小数，包含0但是不包含1
+    max（）   获取对个数值中最大的值
+    min（）  获取多个数值中的最小值
+    pow（）  （数值，次方）计算一个数值的N次方
+- 案例js15
+### Date对象
+    该对象是js中的时间对象
+    2016/5/5  3:5:12
+    5/15/2016
+    猴年马月 子时...
+    
+    在js中为了方便时间的存储和计算，引入了时间戳的概念
+    时间戳也叫作Unix时间戳，他是用从1970年1月1日0时0分0秒0毫秒到指定时间的毫秒数，js时间戳可以使用285616年....
+    
+    1天=24小时
+    1小时=60分钟
+    1分钟=60秒
+    1秒=1000毫秒
+    
+    1.实例化一个当前时间对象
+        var now = new Date();
+    2.实例化一个指定时间对象 
+        传入指定的时间戳
+        var 变量 = new Date（时间戳）；
+        传入时间格式的字符串
+        var 变量 = new Date（时间格式字符串）
+        例如：1970/1/1   1970-1-1   1970.1.1   5:12:23
+        分别传入年月日时分秒参数
+        var 变量 = new Date（年，月，日，时，分，秒，毫秒）；
+- 案例js16
+### 时间对象的方法
+    获取本地时间的相关方法
+    getFullYear（）  获取完整的年份
+    getMonth（）  获取月份  注意：0-11 表示1-12月
+    getDate（）  获取日期  返回1-31的数值
+    getHours（）  获取当前小时值  0-23
+    getMinutes（）  获取分钟数  0-59
+    getSeconds（）  获取秒数  0-59
+    getMilliseconds()  获取毫秒数  0-999
+    getDay（）  获取周几 0-6 表示 周天--周六
+    getTime（）  获取当前时间对象的时间戳
+    
+    设置本地时间的相关方法
+    setFullYear（）  设置完整的年份
+    setMonth（）  设置月份  注意：0-11 表示 1-12月
+    setDate（）  设置日期  返回 1-31的数值
+    setHours（）  设置当前小时值  0-23
+    setMinutes（）  设置分钟数  0-59
+    setSeconds（）  设置秒数  0-59
+    setMilliseconds()  设置毫秒数  0-999
+    setDay（）  设置周几 0-6 表示 周天--周六
+    setTime（）  设置当前时间对象的时间戳
+        如使用了setTime方法一般不会再使用其他的设置相关方法
+    案例js17
+    
+    获取UTC时间
+    getUTCFullYear（）  获取世界协调时间完整的年份
+    getUTCMonth（）  获取世界协调时间月份  注意：0-11 表示1-12月
+    getUTCDate（）  获取世界协调时间日期  返回1-31的数值
+    getUTCHours（）  获取世界协调时间当前小时值  0-23
+    getUTCMinutes（）  获取世界协调时间分钟数  0-59
+    getUTCSeconds（）  获取世界协调时间秒数  0-59
+    getUTCMilliseconds()  获取世界协调时间毫秒数  0-999
+    getUTCDay（）  获取世界协调时间周几 0-6 表示 周天--周六
+    getUTCTime（）  获取世界协调时间当前时间对象的时间戳
+        
+    设置UTC时间
+    设置本地时间的相关方法
+    setUTCFullYear（）  设置完整的年份
+    setUTCMonth（）  设置月份  注意：0-11 表示 1-12月
+    setUTCDate（）  设置日期  返回 1-31的数值
+    setUTCHours（）  设置当前小时值  0-23
+    setUTCMinutes（）  设置分钟数  0-59
+    setUTCSeconds（）  设置秒数  0-59
+    setUTCMilliseconds()  设置毫秒数  0-999
+    setUTCDay（）  设置周几 0-6 表示 周天--周六
+    setUTCTime（）  设置当前时间对象的时间戳
+        如使用了setTime方法一般不会再使用其他的设置相关方法
+    
+    其他方法
+    toString（）  获取本地完整时间日期的字符串格式   toString=toDateString+toTimeString();
+    toDatestring()  获取本地时间日期字符串格式
+    toTimestring()  获取本地时间的时间字符串类型格式
+    toLocaleString（）  获取本地时间日期的字符串格式
+    toLocaleDateString()  获取本地时间的日期本地字符串格式
+    toLocaleTimeString（）  获取本地时间的时间本地字符串格式
+    
+    toUTCString（）  获取UTC完整时间日期的字符串格式
+    valueOf（）
+    

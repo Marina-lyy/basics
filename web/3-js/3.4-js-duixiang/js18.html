@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>toString</title>
+    <script>
+        //实例化时间对象
+        var date = new Date();
+
+        //toString()  继承自Object原型
+        console.log(date.toString());//同一个时间的不同形式（本地时间）
+
+        //toLocaleString()  继承自Object原型
+        console.log(date.toLocaleString());//同一个时间的不同形式（本地时间）
+
+        //valueOf()  继承自Object原型
+        console.log(date.valueOf());
+
+        //toUTCString()  获取UTC完整时间日期的字符串格式
+        console.log(date.toUTCString());//UTC是全球的，何来的本地？
+
+        //toDateString()  获取本地时间的日期字符串格式
+        console.log(date.toDateString());
+
+        //toTimeString()  获取本地时间的时间字符串格式
+        console.log(date.toTimeString());
+
+        //toLocaleDateString()  获取本地时间的日期本地字符串格式
+        console.log(date.toLocaleDateString());
+
+        //toLocaleTimeString()  获取本地时间的时间本地字符串格式
+        console.log(date.toLocaleTimeString());
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Date</title>
+    <script>
+        //本地时间函数
+        /*
+        var date = new Date();
+        //getFullYear（）  获取完整的年份
+        console.log(date.getFullYear());
+
+        //getMonth()  获取月份  注意：0-11  表示1-12月
+        console.log(date.getMonth());
+
+        //getDate()  获取日期  返回1-31的数值
+        console.log(date.getDate());
+
+        //getHours()  获取当前小时值  0-23
+        console.log(date.getHours());
+
+        //getMinutes()  获取当前分钟数 0-59
+        console.log(date.getMinutes());
+
+        //getSeconds()  获取秒数  0-59
+        console.log(date.getSeconds());
+
+        //getMilliseconds()  获取毫秒数 0-999
+        console.log(date.getMilliseconds());
+
+        //getDay()  获取周几 0-6 表示 周天--周六
+        console.log(date.getDay());
+
+        //getTime()  获取当前时间对象的时间戳
+        console.log(date.getTime());
+
+         */
+        //设置时间对象？直接在new一个时间对象不就可以了吗？
+        //时间对象的重复利用，提高效率
+        var date = new Date();
+        console.log(date);
+
+        //setFullYear()  设置完整年份
+        date.setFullYear(19999);
+        console.log(date);
+
+        //setMonth（）  设置月份  注意：0-11 表示 1-12月
+        date.setMonth(2);
+        console.log(date);
+
+        //setDate（）  设置日期 返回1-31的数值
+        date.setDate(23);
+        console.log(date);
+
+        //setHours（）  设置当前小时值  0-23
+        date.setHours(16);
+        console.log(date);
+
+        //setMinutes（）  设置分钟数  0-59
+        date.setMinutes(18);
+        console.log(date);
+
+        //setSeconds()  设置秒数  0-59
+        date.setSeconds(33);
+        console.log(date);
+
+        //setMilliseconds()  设置毫秒值   0-999
+        date.setMilliseconds(999);
+        console.log(date.getMilliseconds());
+
+        //直接改变时间戳
+        date.setTime(0);
+        console.log(date);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
