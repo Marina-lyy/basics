@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array</title>
+    <script>
+        //slice() 切割数组，并且返回其中的一段
+        //             0      1       2       3      4      5
+        var games = ['wzry','yxlm','dxcyys','qqxw','cyhx','yxs'];
+        //            -6      -5     -4      -3      -2      -1
+        console.log(games);
+
+        //1.从开始位置到结束位置之前，不包含结束位置
+        var result = games.slice(1,4);
+        console.log(result);
+
+        //2.从开始位置截取到最后
+        var result = games.slice(1);
+        console.log(result);
+
+        //3.从开头截取到结束位置之前，不包含结束位置
+        var result = games.slice(0,4);
+        console.log(result);
+
+        //4.从指定位置截取到结束位置之前，不包含结束位置 参数为负数表示从后向前数
+        var result = games.slice(1,-3);
+        console.log(result);
+
+        //5.
+        var result = games.slice(-5,-2);
+        console.log(result);
+
+        //slie(开始位置，结束位置）
+        //非负数  表示从左向右数
+        //负数    表示从右向左数
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

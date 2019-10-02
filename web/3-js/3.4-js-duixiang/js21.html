@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array</title>
+    <script>
+        //创建数组  方法1：使用对象原型
+
+        //使用对象原型实例化一个数组
+        //1.空数组
+        var arr = new Array();
+        console.log(arr,typeof arr);
+
+        //2.创建具有数据的数组
+        var arr = new Array('xl','yy','ll','nn',5,6);
+        console.log(arr,typeof arr);
+
+        //3.创建指定长度的数组
+        var arr = new Array(8);//指定数组的长度为8，但是没有数据
+        console.log(arr,typeof arr);
+        console.log(arr[2]);
+
+        //数组创建  方法2：数组字面量（数组专用格式）
+        //1.空数组
+        var arr = [];
+        console.log(arr,typeof arr);
+
+        //2.创建具有数据的数组
+        var arr = ['xl','yy','ll','nn',5,6];
+        console.log(arr,typeof arr);
+
+        //3.创建指定长度的数组（不推荐）
+        var arr = [,,,,,,,,,,];
+        console.log(arr,typeof arr);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

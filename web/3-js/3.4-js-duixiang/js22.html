@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array</title>
+    <script>
+        //声明一个数组
+
+        var ss = ['法克鱿','雅蠛蝶','尾申鲸','菊花蚕','春鸽'];
+        //           0        1        2        3       4
+        console.log(ss,typeof ss);
+
+        //1.访问数组中的元素
+        console.log(ss[1],ss[3]);
+
+        //2.添加数组元素
+        ss[5] = '草泥马';
+        ss[6] = '潜烈蟹';
+        ss[9] = '鸡巴毛';
+        console.log(ss);
+
+        //3.修改数组元素
+        ss[7] = '吟稻燕';
+        ss[8] = '达菲鸡';
+        console.log(ss[7]);
+        console.log(ss);
+
+        //4.删除数组元素 delete只能删除值不能删除键
+        delete ss[1];
+        delete ss[4];
+        console.log(ss);
+
+        //5.遍历数组中的每个数据[数组的长度 = 最大下标+1】
+        var ss = ['法克鱿','雅蠛蝶','尾申鲸','菊花蚕','春鸽'];
+        //           0        1        2        3       4
+        //采用for循环的方式获取下标，然后通过小标访问值
+        for(var i = 0;i < ss.length;i++){
+            console.log(i,ss[i]);
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

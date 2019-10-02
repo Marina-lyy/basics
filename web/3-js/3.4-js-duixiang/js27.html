@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array</title>
+    <script>
+        //数组
+        //          0,   1     2    3    4    5    6
+        var lc = ['tdp','xlh','hg','ht','yc','qc','bc'];
+        console.log(lc);
+
+        //splice() 数组万能操作方法（直接改变原有数组）
+
+        //splice(指定位置，删除几个元素，添加的元素，添加的元素，添加的元素，。。。）
+        //1.向数组中添加元素
+        lc.splice(3,0,'ztr','xc');//在黄瓜和火腿之前添加’猪头肉‘
+        console.log(lc);
+
+        //2.删除元素
+        lc.splice(4,2);
+        console.log(lc);
+
+        //3.修改元素
+        lc.splice(2,1,'xg');
+        console.log(lc);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

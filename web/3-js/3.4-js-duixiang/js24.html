@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array</title>
+    <script>
+        //数组常用函数，数组对象的方法
+        //concat（）连接数组元素【有返回值】
+        var fivetiger = ['zy','hz','zf','gy','mc'];
+
+        //var newarr = fivetiger.concat('mt','my','mht');
+        var  newarr = fivetiger.concat(['mt1','my1','mht1']);
+
+        console.log(newarr);
+
+        //相加的方式（不可以使用+法符号实现数组连接）
+        var arr1 = ['zs','ls'];
+        var arr2 = ['ww','ml'];
+        var result = arr1 + arr2;//字符串连接  除去了数组对象的toString方法
+        console.log(result,typeof result);
+
+        //join() 使用字符将数组元素连接成一个字符串  ☆☆☆☆☆
+        var family = ['yygz','yymy','yyxzz','yyk'];
+        console.log(family);
+        var result = family.join('❤');
+        console.log(result);
+
+        //pop()  在数组的结尾处弹出一个元素（直接改变原有数组）
+        var girls = ['xyxl','bgw','wqze','tzzg','jjfz'];
+        console.log(girls);
+        girls.pop();
+        console.log(girls);
+
+        //push()  在数组的结尾处添加元素（直接改变原有数组）
+        var girls = ['xyxl','bgw','wqze','tzzg','jjfz'];
+        console.log(girls);
+        girls.push('xsmy','cmmy');
+        console.log(girls);
+
+        //shift()  在数组的开头移除一个元素（直接改变原有数组）
+        var girls = ['xyxl','bgw','wqze','tzzg','jjfz'];
+        console.log(girls);
+        girls.shift();
+        console.log(girls);
+
+        //unshift()  在数组的开头添加元素（直接改变原有数组）
+        var girls = ['xyxl','bgw','wqze','tzzg','jjfz'];
+        console.log(girls);
+        girls.unshift('bzhw','ydn');
+        console.log(girls);
+
+        //reverse()  数组倒转方法（直接改变原有数组）
+        var arr = ['bkd','ela','smt','emp','dc'];
+        console.log(arr);
+        arr.reverse();
+        console.log(arr);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array</title>
+    <script>
+        //sort  数组排序
+        var nums = [2,4,635,234,345,4,635,223,12,34,678,98,6,'a'];
+
+        //方法1：按照ASCII码进行排序（字符）
+        /*
+            字符      整数
+            0-9       48-57
+            A-Z       65-90
+            a-z       97-122
+
+         */
+        nums.sort();
+        console.log(nums);
+
+        //方法2：按照数字排序
+        var nums = [2,4,635,234,345,4,635,223,12,34,678,98,6];
+        //定义数字排序规则
+        /*
+            function func(a,b){
+                //返回值  1  0  -1
+                if(a>b){
+                    return 1;
+                }else if(a == b){
+                    return 0
+                }else{
+                    return -1
+                }
+            }
+         */
+        //固定格式1，参数为2个，2.返回值必须是整数，0，或者负数
+        function da(a,b){
+            //返回值  1  0  -1
+            if(a>b){
+                return 1;
+            }else if(a == b){
+                return 0;
+            }else{
+                return -1;
+            }
+        }
+        nums.sort(da);
+        console.log(nums);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

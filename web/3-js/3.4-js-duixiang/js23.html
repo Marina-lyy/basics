@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array</title>
+    <script>
+        //一维数组【数组中的所有数据都不是数组】
+        var onewei = ['xz','xn','xl','xd','xl'];
+        console.log(onewei);
+        console.log(onewei[2]);
+
+        //二维数组【一维数组中的内容包含一维数组】
+        var erwei = [
+            ['xz','woman',22],
+            ['xn','woman',35],
+            ['xl','woman',33],
+            ['xd','woman',38],
+            ['xl','woman',34]
+        ];
+        console.log(erwei);
+        //访问二维数组
+        console.log(erwei[2]);
+        console.log(erwei[2][0]);
+
+        //三维数组/多维数组（一旦你的数据超过3维，请考虑下数据是否合理！）
+        var sanwei = [
+            ['xz','woman',22,['36D',95,108]],
+            ['xn','woman',35,['35c',98,118]],
+            ['xl','woman',33,['35c',98,112]],
+            ['xd','woman',38,['35c',98,114]],
+            ['xl','woman',34,['35c',98,128]]
+        ];
+        console.log(sanwei);
+        //访问三维数组
+        console.log(sanwei[1][3][0]);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
