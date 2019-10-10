@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>String</title>
+    <script>
+        //match（）  进行正则查找，并将查找的结果作为数组返回
+        var str1 = '10世9贫凑得8两7钱6分5毫4厘况且3心2意1等下流！';
+
+        var result = str1.match(/钱/);//找出字符串中的所有数字字符
+        console.log(result);
+
+        //search() 进行正则查找你，将查找到的第一个符合的字符串的位置返回
+        var str1 =  '10世9贫凑得8两7钱6分5毫4厘况且3心2意1等下流！';
+
+        var result = str1.search(/钱/);//找出字符串中的所有数字字符
+        console.log(result);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

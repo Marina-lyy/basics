@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>String</title>
+    <script>
+        //slice() 切割字符串并且返回部分字符串
+        var kongzi = '孔子说：知之为知之不知为不知，是智也';
+        /*
+                字符串.slice（开始位置[,结束位置]);
+         */
+
+        var result = kongzi.slice(4,12);
+        console.log(result);
+
+        var result = kongzi.slice(12);
+        console.log(result);
+
+        var result = kongzi.slice(-5);
+        console.log(result);
+
+        var result = kongzi.slice(-5,-3);
+        console.log(result);
+
+
+        //substr()  返回指定位置的指定长度字符串
+        /*
+                字符串.substr(开始位置，[,指定长度});
+
+         */
+        var kongzi = '孔子说：知之为知之不知为不知，是智也';
+
+        var  result = kongzi.substr(4,8);
+        console.log(result);
+
+        var result = kongzi.substr(5);
+        console.log(result);
+
+        var result = kongzi.substr(-5,2);
+        console.log(result);
+
+        //substring() 返回指定位置的字符串
+        /*
+                字符串.substring(开始位置[,结束位置])
+         */
+        var kongzi = '孔子说：知之为知之不知为不知，是智也';
+        var  result = kongzi.substr(4,8);
+        console.log(result);
+
+        var result = kongzi.substr(5);
+        console.log(result);
+
+        var result = kongzi.substr(-5,2);
+        console.log(result);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

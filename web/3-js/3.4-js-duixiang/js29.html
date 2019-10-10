@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>String</title>
+    <script>
+        //length 属性
+        var str = '排队两小时，游玩五分钟！';
+        console.log(str.length);
+
+        //函数/方法
+
+        //charAt()  返回指定位置的字符  位置不能为负数！
+        //         0 1 2 3 4 5 6 7 8 9 .....
+        var str = '人是铁，饭是钢，一顿不吃饿得慌！';
+        console.log(str);
+        var zf = str.charAt(8);
+        console.log(zf);
+
+        //charCodeAt（） 返回指定位置的字符编码（Unicode编码）  位置不能为负数！
+        var str = '人是铁，饭是钢，A一顿不吃饿得慌！';
+        console.log(str);
+        var zf = str.charCodeAt(8);
+        console.log(zf);
+
+        //concat()  字符串连接函数（没人用，不如用+）
+        var str1 = '我们的人生有A面也有B面。';
+        var str2 = '有些人的人生只有S面和B面。';
+
+        var result = str.concat(str2);//为什么不用字符串连接符号+
+        console.log(result);
+
+        //indexOf（）查找第一次出现指定字符的位置
+        //lastIndexOf（）查找最后一次出现指定字符的位置
+
+        //          0 1 2 3 4 5 6 7 8 9 10 ....
+        var str1 = '我喜欢御姐，也喜欢萝莉！御姐使我兴奋，萝莉是我湿润';
+
+        var result1 = str1.indexOf('御姐');
+        console.log(result1);//3
+
+        var result2 = str.lastIndexOf('御姐');
+        console.log(result2);
+
+        //slice() 切割字符串并且返回部分字符串
+        var kongzi = '孔子说：知之为知之不知为不知，是智也';
+        /*
+                字符串.slice（开始位置[,结束位置]);
+         */
+
+        var result = kongzi.slice(4,12);
+        console.log(result);
+
+        var result = kongzi.slice(12);
+        console.log(result);
+
+        var result = kongzi.slice(-5);
+        console.log(result);
+
+        var result = kongzi.slice(-5,-3);
+        console.log(result);
+
+        //split() 使用指定的字符切割字符串，并将结果使用数组返回  数组join的返回操作
+        var girls = '小张；小李；小吕；小刘，小吉';
+        var arr = girls.split(';');
+        console.log(arr);
+
+        //replace() 字符串替换函数（只替换第一次）
+        var ex = '我的前女友是一个很优秀的姑娘，前女友会做饭，会洗衣，会挣钱';
+        //将前女友 修改为 前任
+        var result = ex.replace('前女友','前任');
+        console.log(result);
+
+        //toUpperCase() 将字符串转化为大写（英文）
+        //toLowerCase（） 将字符串转化为小写（英文）
+        var yw = 'if you love me';
+        console.log(yw);
+        var result1 = yw.toUpperCase();
+        console.log(result1);
+
+        var yw = 'YOU SEE SEE YOU!';
+        console.log(yw);
+        var result2 = yw.toLowerCase();
+        console.log(result2);
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
