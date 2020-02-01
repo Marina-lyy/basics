@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BOM在浏览器中的名称</title>
+    <script>
+    //BOM在浏览器中的名称
+    //js window对象就是语法的Global固有对象
+    //浏览器中window对象就是BOM的替身
+    console.log(window);
+    //输出其他子对象
+    console.log(window.document);//文档对象
+    console.log(window.history);//历史对象
+    console.log(window.screen);//屏幕对象
+    console.log(window.location);//地址对象
+    console.log(window.frames);//框架对象
+    console.log(window.navigator);//信息对象
+
+    //js语法
+    var girl = '大波妹';
+    console.log(girl);
+    console.log(window.girl);
+
+    //输出其他子对象（所有window的内容是以存在的变量不可以使用其作为变量名）
+    console.log(document);//文档对象
+    console.log(history);//历史对象
+    console.log(screen);//屏幕对象
+    console.log(frames);//框架对象
+    console.log(navigator);//信息对象
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

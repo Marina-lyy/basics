@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="em">
+<head>
+    <meta charset="utf-8">
+    <title>正则</title>
+    <script>
+        //元字符：修饰原子
+        //()  作用有三
+            //1.将多个原子视为一个原子处理，方便使用元字符
+            //2.将（）中的内容暂存于内存中方便后期调用
+            //3.改变优先级  主要跟|配合
+
+        var str = '你大二爷';
+        var result = str.match(/你(大|二)爷/g);
+        console.log(result);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

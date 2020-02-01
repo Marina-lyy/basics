@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>正则</title>
+    <script>
+        //模式修正符
+
+        //i   ignore    忽略大小写
+
+        //g   global    全局匹配
+
+        //m   multiline    多行模式
+
+        //i
+
+        var str = 'http://www.BAidu.com';
+        var result = str.match(/baidu/i);
+        console.log(result);
+
+        //g
+        var str = '我们都喜欢萝莉，因为萝莉很可爱，萝莉很漂亮，萝莉让人想入非非';
+        var result = str.match(/萝莉/g);
+        console.log(result);
+
+        //m
+        var str = 'www.kengni.com\nwww.kengwo.com\nwww.kengta.com';
+        //变成三个独立字符串，进行三次匹配
+        var result = str.match(/^www.kengwo.com$/m);//将字符串中所有\n断开，当做多个字符串处理
+        console.log(result);
+
+        //模式修正符允许同时使用
+    </script>
+</head>
+<body>
+
+</body>
+</html>

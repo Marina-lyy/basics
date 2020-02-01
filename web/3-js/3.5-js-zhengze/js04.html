@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>正则</title>
+    <script>
+        //贪婪模式：都要！尽可能的获取最多的内容
+        var str = '【貂蝉】【西施】【杨玉环】【王昭君】【樱井莉亚】';
+        var result = str.match(/【.*?】/g);
+        console.log(result);
+
+        //(?:)  取消暂存操作
+        var str = 'www.google.com';
+        var result = str.match(/(?:go)ogle/);
+        console.log(result);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
