@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定时执行</title>
+    <script>
+        //setTimeout()定时执行
+        /*
+        //方法1：
+        //等待10秒在执行以下代码
+        window.setTimeout(function(){
+            //【延时】执行的功能
+            console.log('九浅一深传入龙潭虎穴');
+        },10000);//匿名函数
+
+        //方法2：
+        //等待10秒在执行以下代码
+        function jiao(){
+            //【延时】执行的功能
+            console.log('九浅一深传入龙潭虎穴');
+        }
+        window.setTimeout(jiao,5000);//声明函数
+
+         */
+        //方法3：
+        //等待10秒在执行以下代码
+        function jiao(){
+            //【延时】执行的功能
+            console.log('九浅一深传入龙潭虎穴');
+        }
+        window.setTimeout('jiao()',10000);//字符串
+    </script>
+</head>
+<body>
+
+</body>
+</html>

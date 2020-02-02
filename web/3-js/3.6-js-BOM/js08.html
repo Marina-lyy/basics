@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>清除循环执行</title>
+    <script>
+        //clearInterval()清除循环执行
+        //计数变量
+        var i = 0;
+        var flag = window.setInterval(function(){
+            console.log('shu!' +i);
+            i += 1;
+            //判断
+            if (i==10){
+                console.log('yin');
+                //停止循环
+                window.clearInterval(flag);
+            }
+        },10000);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

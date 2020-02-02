@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>弹窗</title>
+    <button onclick="jg()">警告弹窗</button>
+    <button onclick="xz()">选择弹窗</button>
+    <button onclick="sr()">输入弹窗</button>
+    <script>
+        //alert()警告弹窗  弹出一个信息警告框
+        function jg(){
+            window.alert('FBI Warning');
+        }
+
+        //confirm()  系统确认弹窗
+        function xz(){
+            var result = window.confirm('请问你是纯爷们吗？');
+            console.log(result);
+        }
+
+        //prompt()  系统输入弹窗
+        function sr(){
+            var age = window.prompt('请输入您的年龄',19);
+            console.log(age);
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

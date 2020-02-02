@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>清除定时执行</title>
+    <button onclick="stopds()">停止</button>
+    <script>
+        //clearTimeout()  清除定时执行
+        var ds = window.setTimeout(function(){
+            console.log('孩她妈，到时候喂奶了');
+        },5000);
+        //定义函数调用停止执行
+        function stopds(){
+            window.clearTimeout(ds);
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
